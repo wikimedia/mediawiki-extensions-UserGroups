@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Metalhead64"
+		]
+	},
+	"action-modifygroups": "Benutzergruppen zu ändern",
+	"invalidusergroupname-title": "Ungültiger Name der Benutzergruppe",
+	"invalidusergroupname-error": "Der eingegebene Name für deine neue Benutzergruppe ist ungültig.\n\nZurück zu [[Special:UserGroups]].",
+	"right-modifygroups": "Benutzergruppen erstellen, ändern und löschen",
+	"usergroupnameexists-error": "Du kannst keine neue Benutzergruppe mit diesem Namen erstellen, da sie bereits vorhanden ist.",
+	"usergroups": "Benutzergruppenverwaltung",
+	"usergroups-createnew": "(neu erstellen …)",
+	"usergroups-editgroup-delete": "Diese Benutzergruppe löschen <span class=\"important\" style=\"color:red\">(WARNUNG: Dies ist endgültig. Um diese Klasse erneut zu erstellen, musst du [[Special:UserGroups/new|dieses Formular]] verwenden).</span>",
+	"usergroups-editgroup-newgroup": "Gib den Namen deiner neuen Benutzergruppe ein:",
+	"usergroups-editgroup-reason": "Grund:",
+	"usergroups-editgroup-revoke": "Lege diese Benutzergruppe fest, um Berechtigungen zu entziehen anstatt zu gewähren.",
+	"usergroups-editgroup-save": "Änderungen speichern",
+	"usergroups-editgroup-userrights": "Alle verfügbaren Berechtigungen",
+	"usergroups-log-name": "Benutzergruppen-Logbuch",
+	"usergroups-log-header": "Dies ist ein Logbuch von Änderungen an Benutzerrechten für jede Benutzergruppe.",
+	"usergroups-log-none": "(keine)",
+	"logentry-usergroups-delete": "$1 {{GENDER:$2|löschte}} die Benutzergruppe „$4“."
+}
