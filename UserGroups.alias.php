@@ -13,3 +13,8 @@ $specialPageAliases = array();
 $specialPageAliases['en'] = array(
 	'UserGroups' => array( 'UserGroups' ),
 );
+
+/** German (Deutsch) */
+$specialPageAliases['de'] = array(
+	'UserGroups' => array( 'Benutzergruppen' ),
+);

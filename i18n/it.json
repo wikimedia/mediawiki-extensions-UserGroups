@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"PeppeAeco"
+		]
+	},
+	"action-modifygroups": "Modifica i gruppi utente",
+	"usergroups-createnew": "(creare nuovo...)",
+	"usergroups-editgroup-reason": "Motivo:",
+	"usergroups-editgroup-save": "Salva le modifiche"
+}
