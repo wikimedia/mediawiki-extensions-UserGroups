@@ -18,3 +18,8 @@ $specialPageAliases['en'] = array(
 $specialPageAliases['de'] = array(
 	'UserGroups' => array( 'Benutzergruppen' ),
 );
+
+/** Korean (한국어) */
+$specialPageAliases['ko'] = array(
+	'UserGroups' => array( '사용자그룹' ),
+);

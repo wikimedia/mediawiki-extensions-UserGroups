@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Fitoschido"
+		]
+	},
+	"action-modifygroups": "modificar grupos del usuario",
+	"invalidusergroupname-title": "Nombre de grupo de usuarios no válido",
+	"invalidusergroupname-error": "El nombre que has propocionado para el grupo de usuarios nuevo no es válido.\n\nVolver a [[Special:UserGroups]].",
+	"nosuchusergroup": "No se encontró ningún grupo de usuarios llamado «$1». ¿Quieres [[Special:UserGroups/new|crearlo]]?",
+	"right-modifygroups": "Crear, modificar y eliminar grupos de usuarios",
+	"usergroupnameexists-error": "No se puede crear otro grupo de usuarios con este nombre.",
+	"usergroups": "Gestión de grupos del usuario",
+	"usergroups-createnew": "(crear nuevo…)",
+	"usergroups-editgroup-newgroup": "Escribe el nombre del grupo de usuarios nuevo:",
+	"usergroups-editgroup-reason": "Motivo:",
+	"usergroups-editgroup-save": "Guardar cambios",
+	"usergroups-editgroup-userrights": "Todos los permisos disponibles",
+	"usergroups-log-name": "Registro de grupos de usuarios",
+	"usergroups-log-none": "(ninguno)",
+	"logentry-usergroups-delete": "$1 eliminó el grupo de usuarios «$4».",
+	"logentry-usergroups-modify": "$1 modificó el grupo de usuarios «$4». $7Añadido $5; eliminado $6"
+}

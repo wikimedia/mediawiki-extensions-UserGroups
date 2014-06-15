@@ -4,6 +4,9 @@
 			"Robby"
 		]
 	},
+	"action-modifygroups": "Benotzergruppen änneren",
 	"usergroups-editgroup-reason": "Grond:",
-	"usergroups-editgroup-save": "Ännerunge späicheren"
+	"usergroups-editgroup-save": "Ännerunge späicheren",
+	"usergroups-editgroup-userrights": "All disponibel Rechter",
+	"usergroups-log-none": "(keen)"
 }
