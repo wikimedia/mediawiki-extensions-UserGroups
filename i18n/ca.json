@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Fitoschido"
+		]
+	},
+	"right-modifygroups": "Crear, modificar i suprimir grups d’usuaris",
+	"usergroups-editgroup-reason": "Motiu:",
+	"usergroups-editgroup-save": "Desa els canvis",
+	"usergroups-log-none": "(cap)"
+}

@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"PeppeAeco"
+			"PeppeAeco",
+			"Beta16"
 		]
 	},
-	"action-modifygroups": "Modifica i gruppi utente",
+	"action-modifygroups": "modificare i gruppi di utenti",
+	"right-modifygroups": "Crea, modifica e cancella gruppi di utenti",
 	"usergroups-createnew": "(creare nuovo...)",
 	"usergroups-editgroup-reason": "Motivo:",
 	"usergroups-editgroup-save": "Salva le modifiche"

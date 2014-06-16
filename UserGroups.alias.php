@@ -19,7 +19,22 @@ $specialPageAliases['de'] = array(
 	'UserGroups' => array( 'Benutzergruppen' ),
 );
 
+/** Upper Sorbian (hornjoserbsce) */
+$specialPageAliases['hsb'] = array(
+	'UserGroups' => array( 'Wužiwarske_skupiny' ),
+);
+
 /** Korean (한국어) */
 $specialPageAliases['ko'] = array(
 	'UserGroups' => array( '사용자그룹' ),
+);
+
+/** Simplified Chinese (中文（简体）‎) */
+$specialPageAliases['zh-hans'] = array(
+	'UserGroups' => array( '用户组' ),
+);
+
+/** Traditional Chinese (中文（繁體）‎) */
+$specialPageAliases['zh-hant'] = array(
+	'UserGroups' => array( '使用者群組' ),
 );
