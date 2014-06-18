@@ -6,8 +6,17 @@
 		]
 	},
 	"action-modifygroups": "modificare i gruppi di utenti",
+	"invalidusergroupname-title": "Nome gruppo utente non valido",
+	"invalidusergroupname-error": "Il nome inserito per il nuovo gruppo utente non è valido.\n\nTorna a [[Special:UserGroups]].",
+	"nosuchusergroup": "Non è stato trovato alcun gruppo utente chiamato \"$1\". Vuoi forse [[Special:UserGroups/new|creare]] questo nuovo gruppo utente?",
 	"right-modifygroups": "Crea, modifica e cancella gruppi di utenti",
-	"usergroups-createnew": "(creare nuovo...)",
+	"usergroupnameexists-error": "Non è possibile creare un nuovo gruppo utenti con questo nome poiché esiste già.",
+	"usergroups": "Gestione dei gruppi utente",
+	"usergroups-createnew": "(crea nuovo...)",
 	"usergroups-editgroup-reason": "Motivo:",
-	"usergroups-editgroup-save": "Salva le modifiche"
+	"usergroups-editgroup-save": "Salva le modifiche",
+	"usergroups-editgroup-userrights": "Tutte le autorizzazioni disponibili",
+	"usergroups-log-name": "Gruppi utente",
+	"usergroups-log-none": "(nessuno)",
+	"logentry-usergroups-delete": "$1 {{GENDER:$2|ha cancellato}} il gruppo utente \"$4\"."
 }

@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jopparn"
+		]
+	},
+	"usergroups-createnew": "(skapa ny...)",
+	"usergroups-editgroup-reason": "Orsak:",
+	"usergroups-log-none": "(ingen)",
+	"usergroups-log-revoke": "återkalla typ",
+	"logentry-usergroups-create": "$1 {{GENDER:$2|skapade}} nya $7user-grupp \"$4\" som innehåller: $5",
+	"logentry-usergroups-delete": "$1 {{GENDER:$2|raderade}} användargrupp \"$4\".",
+	"logentry-usergroups-modify": "$1 {{GENDER:$2|modifierade}} användargrupp \"$4\". $7Added $5; Tog bort $6"
+}
