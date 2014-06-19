@@ -4,6 +4,10 @@
 			"Chrumps"
 		]
 	},
+	"invalidusergroupname-title": "Nieprawidłowa nazwa grupy użytkowników",
+	"usergroupnameexists-error": "Nie można utworzyć nowej grupy użytkowników o tej nazwie, ponieważ już istnieje.",
+	"usergroups": "Zarządzanie grupami użytkowników",
 	"usergroups-editgroup-reason": "Powód:",
-	"usergroups-editgroup-save": "Zapisz zmiany"
+	"usergroups-editgroup-save": "Zapisz zmiany",
+	"logentry-usergroups-delete": "$1 {{GENDER:$2|usunął|usunęła}} grupę użytkowników „$4”."
 }
