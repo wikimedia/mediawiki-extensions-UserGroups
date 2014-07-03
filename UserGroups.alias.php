@@ -29,6 +29,11 @@ $specialPageAliases['ko'] = array(
 	'UserGroups' => array( '사용자그룹' ),
 );
 
+/** Macedonian (македонски) */
+$specialPageAliases['mk'] = array(
+	'UserGroups' => array( 'КорисничкиГрупи' ),
+);
+
 /** Simplified Chinese (中文（简体）‎) */
 $specialPageAliases['zh-hans'] = array(
 	'UserGroups' => array( '用户组' ),
