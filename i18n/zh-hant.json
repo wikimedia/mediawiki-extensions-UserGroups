@@ -6,5 +6,6 @@
 	},
 	"usergroups-log-revoke": "撤回類別",
 	"usergroups-log-revoke-switchon": "切換為撤銷類別；",
-	"usergroups-log-revoke-switchoff": "已切換非撤銷類別；"
+	"usergroups-log-revoke-switchoff": "已切換非撤銷類別；",
+	"logentry-usergroups-modify": "$1 {{GENDER:$2|修改}}使用者群組 \"$4\"。$7加入$5；刪除$6"
 }

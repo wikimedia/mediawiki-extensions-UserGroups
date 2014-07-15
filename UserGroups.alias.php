@@ -14,6 +14,16 @@ $specialPageAliases['en'] = array(
 	'UserGroups' => array( 'UserGroups' ),
 );
 
+/** Arabic (العربية) */
+$specialPageAliases['ar'] = array(
+	'UserGroups' => array( 'مجموعات_المستخدم' ),
+);
+
+/** Egyptian Spoken Arabic (مصرى) */
+$specialPageAliases['arz'] = array(
+	'UserGroups' => array( 'مجموعات_اليوزر' ),
+);
+
 /** German (Deutsch) */
 $specialPageAliases['de'] = array(
 	'UserGroups' => array( 'Benutzergruppen' ),
