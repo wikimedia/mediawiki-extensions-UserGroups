@@ -16,7 +16,7 @@
 	"usergroups-createnew": "(skapa ny...)",
 	"usergroups-editgroup-delete": "Radera denna användargrupp <span class=\"important\" style=\"color:red\">(Varning: Detta är oåterkalleligt. För att återskapa denna klass måste du använda [[Special:UserGroups/new|detta formulär]].)</span>",
 	"usergroups-editgroup-desc": "Välj en användargrupp från rullmenyn nedan, eller skapa din egen med \"skapa ny...\"-alternativet.",
-	"usergroups-editgroup-newgroup": "Ange namnet för din användargrupp:",
+	"usergroups-editgroup-newgroup": "Ange namnet för din nya användargrupp:",
 	"usergroups-editgroup-reason": "Orsak:",
 	"usergroups-editgroup-revoke": "Ange denna användargruppen som återkalla i stället för bevilja behörighet.",
 	"usergroups-editgroup-save": "Spara ändringar",
