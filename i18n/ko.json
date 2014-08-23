@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kwj2772"
+		]
+	},
+	"action-modifygroups": "사용자 그룹을 수정할",
+	"invalidusergroupname-title": "잘못된 사용자 그룹 이름",
+	"invalidusergroupname-error": "새 사용자 그룹으로 입력한 이름이 잘못되었습니다.\n\n[[Special:UserGroups]]으로 돌아갑니다.",
+	"usergroups": "사용자 그룹 관리",
+	"usergroups-editgroup-newgroup": "새 사용자 그룹 이름 입력:",
+	"usergroups-editgroup-reason": "이유:",
+	"usergroups-editgroup-save": "변경 사항 저장"
+}
