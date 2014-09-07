@@ -4,6 +4,8 @@
 			"Liuxinyu970226"
 		]
 	},
+	"action-modifygroups": "修改使用者組",
+	"invalidusergroupname-title": "無效的使用者組名稱",
 	"usergroups-editgroup-reason": "原因：",
 	"usergroups-log-revoke": "撤回類別",
 	"usergroups-log-revoke-switchon": "切換為撤銷類別；",
