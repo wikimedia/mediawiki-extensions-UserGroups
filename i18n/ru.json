@@ -4,7 +4,9 @@
 			"Okras"
 		]
 	},
+	"usergroups-createnew": "(создать новую…)",
 	"usergroups-editgroup-reason": "Причина:",
 	"usergroups-editgroup-save": "Сохранить изменения",
+	"usergroups-editgroup-userrights": "Все доступные разрешения",
 	"usergroups-log-none": "(нет)"
 }
