@@ -5,6 +5,7 @@
 		]
 	},
 	"action-modifygroups": "प्रयोक्ता समुह व्यवस्थित करू",
+	"invalidusergroupname-title": "अमान्य प्रयोक्ता समुह नाम",
 	"usergroups": "प्रयोक्ता समुह प्रबन्धन",
 	"usergroups-createnew": "(नव बनाऊ...)",
 	"usergroups-editgroup-reason": "कारण:",
