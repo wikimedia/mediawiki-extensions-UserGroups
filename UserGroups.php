@@ -40,6 +40,7 @@ $wgExtensionCredits['other'][] = array(
 	'path' => __FILE__,
 	'url' => 'https://www.mediawiki.org/wiki/Extension:UserGroups',
 	'version' => '1.0.0',
+	'license-name' => 'GPL-2.0+',
 );
 
 // For internationalization
