@@ -34,6 +34,11 @@ $specialPageAliases['fa'] = array(
 	'UserGroups' => array( 'گروه‌های_کاربری' ),
 );
 
+/** Hebrew (עברית) */
+$specialPageAliases['he'] = array(
+	'UserGroups' => array( 'קבוצות_משתמשים' ),
+);
+
 /** Upper Sorbian (hornjoserbsce) */
 $specialPageAliases['hsb'] = array(
 	'UserGroups' => array( 'Wužiwarske_skupiny' ),
