@@ -3,7 +3,8 @@
 		"authors": [
 			"Withoutaname",
 			"Robby",
-			"Shirayuki"
+			"Shirayuki",
+			"Umherirrender"
 		]
 	},
 	"action-modifygroups": "{{Doc-action|modifygroups}}",
@@ -13,7 +14,7 @@
 	"right-modifygroups": "{{Doc-right|modifygroups}}",
 	"usergroupnameexists-error": "Error message thrown when user inputs a name for a new user group when the name has already been taken.",
 	"usergroups": "{{Doc-special|UserGroups}}",
-	"usergroups-desc": "{{desc|name=User Groups|url=http://www.mediawiki.org/wiki/Extension:UserGroups}}",
+	"usergroups-desc": "{{desc|name=User Groups|url=https://www.mediawiki.org/wiki/Extension:UserGroups}}",
 	"usergroups-createnew": "Dropdown option in [[Special:UserGroups]] to create a new user group.\n\nSee also:\n* {{msg-mw|Usergroups-editgroup-desc}}",
 	"usergroups-editgroup-delete": "{{doc-important|Do not translate <code><nowiki><span class=\"important\" style=\"color:red\"></nowiki></code>, <code><nowiki>Special:UserGroups/new</nowiki></code>, and <code><nowiki></span></nowiki></code>.}}\nToggle to delete this usergroup using [[Special:UserGroups]].",
 	"usergroups-editgroup-desc": "Description header for the main form page of [[Special:UserGroups]].\n\n\"create new...\" should be consistent with {{msg-mw|Usergroups-createnew}}.",
