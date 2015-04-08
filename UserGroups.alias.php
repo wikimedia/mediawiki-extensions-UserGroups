@@ -24,6 +24,11 @@ $specialPageAliases['arz'] = array(
 	'UserGroups' => array( 'مجموعات_اليوزر' ),
 );
 
+/** Western Balochi (بلوچی رخشانی) */
+$specialPageAliases['bgn'] = array(
+	'UserGroups' => array( 'کارمرزوکانی_گروپ_ئان' ),
+);
+
 /** German (Deutsch) */
 $specialPageAliases['de'] = array(
 	'UserGroups' => array( 'Benutzergruppen' ),
