@@ -5,7 +5,7 @@
 			"LNDDYL"
 		]
 	},
-	"action-modifygroups": "修改使用者組",
+	"action-modifygroups": "變更使用者群組",
 	"invalidusergroupname-title": "無效的使用者組名稱",
 	"nosuchusergroup": "未找到名為「$1」的使用者群組，您希望 [[Special:UserGroups/new|建立]] 這個新的使用者群組麼？",
 	"usergroups-editgroup-reason": "原因：",
