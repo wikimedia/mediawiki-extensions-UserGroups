@@ -19,7 +19,7 @@ $specialPageAliases['ar'] = array(
 	'UserGroups' => array( 'مجموعات_المستخدم' ),
 );
 
-/** Egyptian Spoken Arabic (مصرى) */
+/** Egyptian Arabic (مصرى) */
 $specialPageAliases['arz'] = array(
 	'UserGroups' => array( 'مجموعات_اليوزر' ),
 );
