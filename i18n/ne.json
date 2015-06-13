@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"बिप्लब आनन्द"
+			"बिप्लब आनन्द",
+			"राम प्रसाद जोशी"
 		]
 	},
 	"action-modifygroups": "प्रयोगकर्ता समूह परिमार्जन गर्नुहोस्",
@@ -12,7 +13,7 @@
 	"usergroups-createnew": "(नयाँ सृजना गर्ने...)",
 	"usergroups-editgroup-newgroup": "तपाईंको नयाँ प्रयोगकर्ता समूहको नाम राख्नुहोस:",
 	"usergroups-editgroup-reason": "कारण :",
-	"usergroups-editgroup-save": "परिवर्तनहरु संग्रह गर्ने",
+	"usergroups-editgroup-save": "परिवर्तनहरू संग्रह गर्ने",
 	"usergroups-log-none": "(कुनै पनि होइन)",
 	"usergroups-log-revoke": "रद्द प्रकार",
 	"usergroups-log-revoke-switchon": "रद्द प्रकारमा फर्किने;",
