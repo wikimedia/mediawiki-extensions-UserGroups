@@ -51,7 +51,6 @@ $wgLogHeaders['usergroups'] = 'usergroups-log-header';
 $wgLogActionsHandlers['usergroups/*'] = 'LogFormatter';
 $wgMessagesDirs['UserGroups'] = __DIR__ . '/i18n';
 $wgSpecialPages['UserGroups'] = 'SpecialUserGroups';
-$wgSpecialPageGroups['UserGroups'] = 'users';
 
 // For autoloading
 $wgAutoloadClasses['AddUserGroup'] = __DIR__ . '/addUserGroup.php';

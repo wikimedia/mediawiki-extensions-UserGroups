@@ -411,4 +411,8 @@ class SpecialUserGroups extends SpecialPage {
 			$this->getOutput()->redirect( $successpage );
 		}
 	}
+
+	protected function getGroupName() {
+		return 'users';
+	}
 }
