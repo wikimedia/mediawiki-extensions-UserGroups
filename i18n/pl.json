@@ -5,9 +5,12 @@
 		]
 	},
 	"invalidusergroupname-title": "Nieprawidłowa nazwa grupy użytkowników",
+	"right-modifygroups": "Tworzenie, modyfikowanie i usuwanie grup użytkowników",
 	"usergroupnameexists-error": "Nie można utworzyć nowej grupy użytkowników o tej nazwie, ponieważ już istnieje.",
 	"usergroups": "Zarządzanie grupami użytkowników",
 	"usergroups-editgroup-reason": "Powód:",
 	"usergroups-editgroup-save": "Zapisz zmiany",
+	"usergroups-editgroup-userrights": "Wszystkie dostępne uprawnienia",
+	"usergroups-log-none": "(brak)",
 	"logentry-usergroups-delete": "$1 {{GENDER:$2|usunął|usunęła}} grupę użytkowników „$4”."
 }
