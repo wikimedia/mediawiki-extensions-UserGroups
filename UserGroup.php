@@ -180,7 +180,7 @@ class UserGroup {
 					( ( $username instanceof User ) ? $username :
 					null ) );
 			if ( $user ) {
-				if ( wfRunHooks( 'UserAddGroup', array( $user, &$this->nameInternal ) ) &&
+				if ( Hooks::run( 'UserAddGroup', array( $user, &$this->nameInternal ) ) &&
 					$this->dbrows && $user->getId() ) {
 					$dbw = wfGetDB( DB_MASTER );
 					$dbw->insert(
@@ -389,7 +389,7 @@ class UserGroup {
 					null ) );
 			if ( $user ) {
 				$user->load();
-				if ( wfRunHooks( 'UserRemoveGroup', array( $user, &$this->nameInternal ) ) &&
+				if ( Hooks::run( 'UserRemoveGroup', array( $user, &$this->nameInternal ) ) &&
 					$this->dbrows && $user->getId() ) {
 					$dbw = wfGetDB( DB_MASTER );
 					$dbw->delete(
