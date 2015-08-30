@@ -6,7 +6,7 @@
     },
     "action-modifygroups": "modify user groups",
     "invalidusergroupname-title": "Invalid user group name",
-    "invalidusergroupname-error": "The name you have entered for your new user group is invalid.\n\nReturn to [[Special:UserGroups]].",
+    "invalidusergroupname-error": "The name you have entered for your new user group is invalid.\n\nReturn to [[{{#special:UserGroups}}]].",
     "nosuchusergroup": "There was no user group found called \"$1\". Did you perhaps want to [[Special:UserGroups/new|create]] this new user group?",
     "right-modifygroups": "Create, modify and delete user groups",
     "usergroupnameexists-error": "You cannot create a new user group with this name as it already exists.",
