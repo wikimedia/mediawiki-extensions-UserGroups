@@ -7,7 +7,7 @@
 	},
 	"action-modifygroups": "ändra användargrupper",
 	"invalidusergroupname-title": "Ogiltigt namn för användargrupp",
-	"invalidusergroupname-error": "Namnet som du angav för din nya användargrupp är ogiltigt.\n\nTillbaka till [[Special:UserGroups]]",
+	"invalidusergroupname-error": "Namnet som du angav för din nya användargrupp är ogiltigt.\n\nTillbaka till [[{{#special:UserGroups}}]]",
 	"nosuchusergroup": "Kunde inte hitta någon användargrupp med namnet \"$1\". Ville du kanske [[Special:UserGroups/new|skapa]] denna nya användargrupp?",
 	"right-modifygroups": "Skapa, ändra eller radera användargrupper",
 	"usergroupnameexists-error": "Du kan inte skapa en ny användargrupp med detta namn då det redan finns en.",

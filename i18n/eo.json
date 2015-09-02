@@ -5,7 +5,7 @@
 		]
 	},
 	"action-modifygroups": "Redakti grupojn de uzantoj",
-	"invalidusergroupname-error": "La nomo, kiun vi enigis, por via nova uzanto-grupo estas malvalida. Reiru al [[Special:UserGroups]].",
+	"invalidusergroupname-error": "La nomo, kiun vi enigis, por via nova uzanto-grupo estas malvalida. Reiru al [[{{#special:UserGroups}}]].",
 	"nosuchusergroup": "Ne estis trovita uzanto-grupo kun la nomo \"$1\". Ĉu vi eble volis  [[Special:UserGroups/new|krei]] ĉi tiun novan uzanto-grupon?",
 	"right-modifygroups": "Krei, ŝanĝi kaj forigi uzanto-grupojn",
 	"usergroups": "Prizorgado de uzanto-rajtoj",

@@ -6,7 +6,7 @@
 	},
 	"action-modifygroups": "менување на кориснички групи",
 	"invalidusergroupname-title": "Неважечко име на корисничка група",
-	"invalidusergroupname-error": "Внесеното име на новата корисничка група е неважечко.\n\nНазад на [[Special:UserGroups]].",
+	"invalidusergroupname-error": "Внесеното име на новата корисничка група е неважечко.\n\nНазад на [[{{#special:UserGroups}}]].",
 	"nosuchusergroup": "Не пронајдов корисничка група наречена „$1“. Дали можеби сакавте да ја [[Special:UserGroups/new|создадете]] оваа корисничка група?",
 	"right-modifygroups": "Создавање, менување и бришење на кориснички групи",
 	"usergroupnameexists-error": "Не можете да создадете нова корисничка група со ова име бидејќи е зафатено.",

@@ -6,7 +6,7 @@
 	},
 	"action-modifygroups": "利用者グループの変更",
 	"invalidusergroupname-title": "利用者グループ名が無効",
-	"invalidusergroupname-error": "新しい利用者グループの名前として入力したものは無効です。\n\n[[Special:UserGroups]] に戻ってください。",
+	"invalidusergroupname-error": "新しい利用者グループの名前として入力したものは無効です。\n\n[[{{#special:UserGroups}}]] に戻ってください。",
 	"nosuchusergroup": "「$1」という名前の利用者グループが見つかりませんでした。この名前の利用者グループを[[Special:UserGroups/new|新規作成]]することもできます。",
 	"right-modifygroups": "利用者グループを作成、変更、削除",
 	"usergroupnameexists-error": "指定した名前の利用者グループが既に存在するため、新規作成できません。",

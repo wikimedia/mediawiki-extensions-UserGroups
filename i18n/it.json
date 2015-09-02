@@ -7,7 +7,7 @@
 	},
 	"action-modifygroups": "modificare i gruppi di utenti",
 	"invalidusergroupname-title": "Nome gruppo utente non valido",
-	"invalidusergroupname-error": "Il nome inserito per il nuovo gruppo utente non è valido.\n\nTorna a [[Special:UserGroups]].",
+	"invalidusergroupname-error": "Il nome inserito per il nuovo gruppo utente non è valido.\n\nTorna a [[{{#special:UserGroups}}]].",
 	"nosuchusergroup": "Non è stato trovato alcun gruppo utente chiamato \"$1\". Vuoi forse [[Special:UserGroups/new|creare]] questo nuovo gruppo utente?",
 	"right-modifygroups": "Crea, modifica e cancella gruppi di utenti",
 	"usergroupnameexists-error": "Non è possibile creare un nuovo gruppo utenti con questo nome poiché esiste già.",

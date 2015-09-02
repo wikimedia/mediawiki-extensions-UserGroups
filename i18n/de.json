@@ -6,7 +6,7 @@
 	},
 	"action-modifygroups": "Benutzergruppen zu ändern",
 	"invalidusergroupname-title": "Ungültiger Name der Benutzergruppe",
-	"invalidusergroupname-error": "Der eingegebene Name für deine neue Benutzergruppe ist ungültig.\n\nZurück zu [[Special:UserGroups]].",
+	"invalidusergroupname-error": "Der eingegebene Name für deine neue Benutzergruppe ist ungültig.\n\nZurück zu [[{{#special:UserGroups}}]].",
 	"nosuchusergroup": "Es wurde keine Benutzergruppe mit dem Namen „$1“ gefunden. Möchtest du vielleicht diese neue Benutzergruppe [[Special:UserGroups/new|erstellen]]?",
 	"right-modifygroups": "Benutzergruppen erstellen, ändern und löschen",
 	"usergroupnameexists-error": "Du kannst keine neue Benutzergruppe mit diesem Namen erstellen, da sie bereits vorhanden ist.",

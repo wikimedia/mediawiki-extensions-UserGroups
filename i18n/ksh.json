@@ -6,7 +6,7 @@
 	},
 	"action-modifygroups": "Metmaacherjroppe ze ändere",
 	"invalidusergroupname-title": "Ene onjöltijje Nahme för en Metmaacherjopp",
-	"invalidusergroupname-error": "Dä aanjejovve Nahme för en neuje Metmaacherjopp es onjöltesch.\n\nJangk retuhr op [[Special:UserGroups|{{#special:UserGroups}}]].",
+	"invalidusergroupname-error": "Dä aanjejovve Nahme för en neuje Metmaacherjopp es onjöltesch.\n\nJangk retuhr op [[{{#special:UserGroups}}]].",
 	"nosuchusergroup": "En Metmaacherjopp mem Nahme „$1“ wohd nit jefonge. Wollts De velleijsch [[Special:UserGroups/new|en neuje Metmaacherjopp aanlähje]]?",
 	"right-modifygroups": "Metmaacherjroppe aanlähje udder fott schmiiße",
 	"usergroupnameexists-error": "En neu Metmaacherjropp met dämm Nahme löht sesch nit aanlähre, weil et se al jitt.",

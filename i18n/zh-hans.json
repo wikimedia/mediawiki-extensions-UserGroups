@@ -6,7 +6,7 @@
 	},
 	"action-modifygroups": "修改用户组",
 	"invalidusergroupname-title": "无效用户组名",
-	"invalidusergroupname-error": "您输入的新用户组名无效。返回[[Special:UserGroups]]。",
+	"invalidusergroupname-error": "您输入的新用户组名无效。返回[[{{#special:UserGroups}}]]。",
 	"nosuchusergroup": "找不到名叫“$1”的用户组。您希望[[Special:UserGroups/new|创建]]这个新用户组么？",
 	"right-modifygroups": "创建、修改和删除用户组",
 	"usergroupnameexists-error": "您不能用此名称创建用户组，因为它已存在。",
