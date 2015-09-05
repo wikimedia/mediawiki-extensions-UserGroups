@@ -5,6 +5,7 @@
 		]
 	},
 	"invalidusergroupname-title": "Nieprawidłowa nazwa grupy użytkowników",
+	"invalidusergroupname-error": "Wprowadzona nazwa nowej grupy użytkowników jest nieprawidłowa.\n\nPowrót do [[{{#special:UserGroups}}]].",
 	"right-modifygroups": "Tworzenie, modyfikowanie i usuwanie grup użytkowników",
 	"usergroupnameexists-error": "Nie można utworzyć nowej grupy użytkowników o tej nazwie, ponieważ już istnieje.",
 	"usergroups": "Zarządzanie grupami użytkowników",
