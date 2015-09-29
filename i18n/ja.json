@@ -1,19 +1,20 @@
 {
 	"@metadata": {
 		"authors": [
-			"Shirayuki"
+			"Shirayuki",
+			"Sujiniku"
 		]
 	},
 	"action-modifygroups": "利用者グループの変更",
 	"invalidusergroupname-title": "利用者グループ名が無効",
-	"invalidusergroupname-error": "新しい利用者グループの名前として入力したものは無効です。\n\n[[{{#special:UserGroups}}]] に戻ってください。",
+	"invalidusergroupname-error": "新しい利用者グループの名前として入力したものは無効です。\n\n[[Special:UserGroups|戻ってください。]]",
 	"nosuchusergroup": "「$1」という名前の利用者グループが見つかりませんでした。この名前の利用者グループを[[Special:UserGroups/new|新規作成]]することもできます。",
 	"right-modifygroups": "利用者グループを作成、変更、削除",
 	"usergroupnameexists-error": "指定した名前の利用者グループが既に存在するため、新規作成できません。",
 	"usergroups": "利用者グループの管理",
 	"usergroups-desc": "利用者グループにどの利用者権限を登録するかについて、より洗練された制御手段を提供する",
 	"usergroups-createnew": "(新規作成...)",
-	"usergroups-editgroup-delete": "この利用者グループを削除 <span class=\"important\" style=\"color:red\">(警告: この操作は取り消せません。このクラスを再作成するには、[[Special:UserGroups/new|このフォーム]]を使用してください。)</span>",
+	"usergroups-editgroup-delete": "この利用者グループを削除 <span class=\"important\" style=\"color:red\">(<strong>Warning</strong>: この操作は取り消せません。このクラスを再作成するには、[[Special:UserGroups/new|新しく作ってください。]])</span>",
 	"usergroups-editgroup-desc": "下のドロップダウンから利用者グループを選択するか、または「新規作成...」でグループを作成してください。",
 	"usergroups-editgroup-newgroup": "新しい利用者グループの名前を入力:",
 	"usergroups-editgroup-reason": "理由:",
