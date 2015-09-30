@@ -2,12 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Gomoko",
-			"Kc kennylau"
+			"Kc kennylau",
+			"Orlodrim"
 		]
 	},
 	"action-modifygroups": "modifier les groupes utilisateur",
 	"invalidusergroupname-title": "Nom de groupe utilisateur non valide",
-	"invalidusergroupname-error": "Le nom que vous avez saisi pour votre nouveau groupe utilisateur n’est pas valide.\n\nRetour à [[{{#special:UserGroups}}]].",
+	"invalidusergroupname-error": "Le nom que vous avez saisi pour votre nouveau groupe utilisateur n’est pas valide.\n\n[[Special:UserGroups|Retour]].",
 	"nosuchusergroup": "Il n’y a aucun groupe utilisateur appelé « $1 ». Peut-être voulez-vous [[Special:UserGroups/new|créer]] ce nouveau groupe utilisateur ?",
 	"right-modifygroups": "Créer, modifier et supprimer les groupes utilisateur",
 	"usergroupnameexists-error": "Vous ne pouvez pas créer un nouveau groupe utilisateur avec ce nom, car il existe déjà.",

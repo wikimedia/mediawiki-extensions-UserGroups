@@ -5,10 +5,11 @@
 		]
 	},
 	"invalidusergroupname-title": "Nieprawidłowa nazwa grupy użytkowników",
-	"invalidusergroupname-error": "Wprowadzona nazwa nowej grupy użytkowników jest nieprawidłowa.\n\nPowrót do [[{{#special:UserGroups}}]].",
+	"invalidusergroupname-error": "Wprowadzona nazwa nowej grupy użytkowników jest nieprawidłowa.\n\n[[Special:UserGroups|Powrót]].",
 	"right-modifygroups": "Tworzenie, modyfikowanie i usuwanie grup użytkowników",
 	"usergroupnameexists-error": "Nie można utworzyć nowej grupy użytkowników o tej nazwie, ponieważ już istnieje.",
 	"usergroups": "Zarządzanie grupami użytkowników",
+	"usergroups-editgroup-delete": "Usuń tę grupę użytkowników <span class=\"important\" style=\"color:red\">(<strong>Ostrzeżenie</strong> Ta operacja jest nieodwracalna. Aby odtworzyć tę klasę, należy [[Special:UserGroups/new|utworzyć nową]].)</span>",
 	"usergroups-editgroup-reason": "Powód:",
 	"usergroups-editgroup-save": "Zapisz zmiany",
 	"usergroups-editgroup-userrights": "Wszystkie dostępne uprawnienia",
