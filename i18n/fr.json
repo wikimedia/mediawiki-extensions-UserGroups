@@ -15,7 +15,7 @@
 	"usergroups": "Gestion des groupes utilisateur",
 	"usergroups-desc": "Fournit un contrôle plus fin sur ce quels droits utilisateur peuvent être accordés à quels groupes utilisateur.",
 	"usergroups-createnew": "(créer un nouveau…)",
-	"usergroups-editgroup-delete": "Supprimer ce groupe utilisateur <span class=\"important\" style=\"color:red\">(ATTENTION : Ceci est irréversible. Pour recréer cette classe, vous devrez utiliser [[Special:UserGroups/new|ce formulaire]].)</span>",
+	"usergroups-editgroup-delete": "Supprimer ce groupe utilisateur <span class=\"important\" style=\"color:red\">(<strong>Avertissement</strong> : Ceci est irréversible. Pour recréer cette classe, vous devrez [[Special:UserGroups/new|en redéfinir une nouvelle]].)</span>",
 	"usergroups-editgroup-desc": "Sélectionner un groupe utilisateur depuis la liste déroulante ci-dessous, et créer le vôtre avec l’option « créer un nouveau… ».",
 	"usergroups-editgroup-newgroup": "Entrer le nom de votre nouveau groupe utilisateur :",
 	"usergroups-editgroup-reason": "Motif :",

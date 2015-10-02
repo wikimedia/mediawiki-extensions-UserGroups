@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Jopparn",
-			"Lokal Profil"
+			"Lokal Profil",
+			"WikiPhoenix"
 		]
 	},
 	"action-modifygroups": "ändra användargrupper",
@@ -14,7 +15,7 @@
 	"usergroups": "Hantering av användargrupper",
 	"usergroups-desc": "Ger noggrannare kontroll över vilka användarrättigheter som kan registreras med vilka användargrupper.",
 	"usergroups-createnew": "(skapa ny...)",
-	"usergroups-editgroup-delete": "Radera denna användargrupp <span class=\"important\" style=\"color:red\">(Varning: Detta är oåterkalleligt. För att återskapa denna klass måste du använda [[Special:UserGroups/new|detta formulär]].)</span>",
+	"usergroups-editgroup-delete": "Radera denna användargrupp <span class=\"important\" style=\"color:red\">(<strong>Varning</strong>: Detta är oåterkalleligt. För att återskapa denna klass måste du [[Special:UserGroups/new|skapa en ny]].)</span>",
 	"usergroups-editgroup-desc": "Välj en användargrupp från rullmenyn nedan, eller skapa din egen med \"skapa ny...\"-alternativet.",
 	"usergroups-editgroup-newgroup": "Ange namnet för din nya användargrupp:",
 	"usergroups-editgroup-reason": "Orsak:",
