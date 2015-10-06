@@ -4,14 +4,9 @@
 			"Metalhead64"
 		]
 	},
-	"action-modifygroups": "Benutzergruppen zu ändern",
-	"invalidusergroupname-title": "Ungültiger Name der Benutzergruppe",
-	"invalidusergroupname-error": "Der eingegebene Name für deine neue Benutzergruppe ist ungültig.\n\n[[Special:UserGroups|Zurückkehren]].",
-	"nosuchusergroup": "Es wurde keine Benutzergruppe mit dem Namen „$1“ gefunden. Möchtest du vielleicht diese neue Benutzergruppe [[Special:UserGroups/new|erstellen]]?",
-	"right-modifygroups": "Benutzergruppen erstellen, ändern und löschen",
-	"usergroupnameexists-error": "Du kannst keine neue Benutzergruppe mit diesem Namen erstellen, da sie bereits vorhanden ist.",
 	"usergroups": "Benutzergruppenverwaltung",
 	"usergroups-desc": "Ermöglicht eine genauere Kontrolle darüber, welche Benutzerrechte mit welchen Benutzergruppen registriert werden können",
+	"usergroupnameexists-error": "Du kannst keine neue Benutzergruppe mit diesem Namen erstellen, da sie bereits vorhanden ist.",
 	"usergroups-createnew": "(neu erstellen …)",
 	"usergroups-editgroup-delete": "Diese Benutzergruppe löschen <span class=\"important\" style=\"color:red\">(<strong>Warnung</strong>: Dies ist endgültig. Du kannst jederzeit [[Special:UserGroups/new|eine neue Benutzergruppe erstellen]]).</span>",
 	"usergroups-editgroup-desc": "Wähle eine Benutzergruppe aus dem unteren Dropdown-Menü aus oder erstelle deine eigene Gruppe mit der Option „neu erstellen …“.",
@@ -26,6 +21,11 @@
 	"usergroups-log-revoke": "Entzugstyp-",
 	"usergroups-log-revoke-switchon": "Zum Entzugstyp gewechselt;",
 	"usergroups-log-revoke-switchoff": "Zum Nicht-Entzugstyp gewechselt;",
+	"action-modifygroups": "Benutzergruppen zu ändern",
+	"invalidusergroupname-title": "Ungültiger Name der Benutzergruppe",
+	"invalidusergroupname-error": "Der eingegebene Name für deine neue Benutzergruppe ist ungültig.\n\n[[Special:UserGroups|Zurückkehren]].",
+	"nosuchusergroup": "Es wurde keine Benutzergruppe mit dem Namen „$1“ gefunden. Möchtest du vielleicht diese neue Benutzergruppe [[Special:UserGroups/new|erstellen]]?",
+	"right-modifygroups": "Benutzergruppen erstellen, ändern und löschen",
 	"logentry-usergroups-create": "$1 {{GENDER:$2|erstellte}} die neue $7Benutzergruppe „$4“, beinhaltend: $5",
 	"logentry-usergroups-delete": "$1 {{GENDER:$2|löschte}} die Benutzergruppe „$4“.",
 	"logentry-usergroups-modify": "$1 {{GENDER:$2|änderte}} die Benutzergruppe „$4“. $7 Hinzugefügt: $5; Entfernt: $6"
