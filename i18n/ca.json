@@ -4,8 +4,8 @@
 			"Fitoschido"
 		]
 	},
-	"right-modifygroups": "Crear, modificar i suprimir grups d’usuaris",
 	"usergroups-editgroup-reason": "Motiu:",
 	"usergroups-editgroup-save": "Desa els canvis",
-	"usergroups-log-none": "(cap)"
+	"usergroups-log-none": "(cap)",
+	"right-modifygroups": "Crear, modificar i suprimir grups d’usuaris"
 }
