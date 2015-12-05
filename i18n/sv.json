@@ -25,7 +25,7 @@
 	"usergroups-log-revoke-switchoff": "Bytte till icke-återkalla-typ;",
 	"action-modifygroups": "ändra användargrupper",
 	"invalidusergroupname-title": "Ogiltigt namn för användargrupp",
-	"invalidusergroupname-error": "Namnet som du angav för din nya användargrupp är ogiltigt.\n\nTillbaka till [[{{#special:UserGroups}}]]",
+	"invalidusergroupname-error": "Namnet som du angav för din nya användargrupp är ogiltigt.\n\n[[Special:UserGroups|Tillbaka]]",
 	"nosuchusergroup": "Kunde inte hitta någon användargrupp med namnet \"$1\". Ville du kanske [[Special:UserGroups/new|skapa]] denna nya användargrupp?",
 	"right-modifygroups": "Skapa, ändra eller radera användargrupper",
 	"logentry-usergroups-create": "$1 {{GENDER:$2|skapade}} ny $7användargrupp \"$4\" innehållande: $5",
