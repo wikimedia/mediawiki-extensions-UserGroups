@@ -48,6 +48,10 @@ class SpecialUserGroups extends SpecialPage {
 		parent::__construct( 'UserGroups', 'modifygroups', true );
 	}
 
+	public function doesWrites() {
+		return true;
+	}
+
 	/**
 	 * Show this special page
 	 *
