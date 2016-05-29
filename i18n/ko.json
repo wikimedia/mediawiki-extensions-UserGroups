@@ -7,6 +7,7 @@
 	"usergroups": "사용자 그룹 관리",
 	"usergroupnameexists-error": "이 이름을 가진 그룹이 이미 존재하기 때문에 새로운 사용자 그룹을 생성할 수 없습니다.",
 	"usergroups-createnew": "(새로 추가...)",
+	"usergroups-editgroup-delete": "이 사용자 그룹을 삭제합니다 <span class=\"important\" style=\"color:red\">(<strong>경고</strong>: 이는 되돌릴 수 없습니다. 이 그룹을 재생성하려면 [[Special:UserGroups/new|새로 만들어야 합니다]].)</span>",
 	"usergroups-editgroup-newgroup": "새 사용자 그룹 이름 입력:",
 	"usergroups-editgroup-reason": "이유:",
 	"usergroups-editgroup-revoke": "이 그룹에 권한을 부여하는 대신 제거하도록 설정",
