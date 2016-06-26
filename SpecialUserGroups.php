@@ -146,7 +146,7 @@ class SpecialUserGroups extends SpecialPage {
 		$this->getOutput()->addHTML(
 			'
 			' .
-			Html::inlineScript( '
+			ResourceLoader::makeInlineScript( '
 				$(function() {
 					$("#groupname").change(function() {
 						location = $("#groupname option:selected").val();
