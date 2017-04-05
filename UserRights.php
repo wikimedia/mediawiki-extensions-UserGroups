@@ -78,7 +78,6 @@ class UserRight {
 		'editmyuserjs',
 		'editmywatchlist',
 		'editsemiprotected',
-		'editusercssjs', #deprecated
 		'editusercss',
 		'edituserjs',
 		'hideuser',
