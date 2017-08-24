@@ -5,7 +5,7 @@
 		]
 	},
 	"usergroups": "User groups management",
-	"usergroups-desc": "Provides finer control over what userrights can be registered with which user groups.",
+	"usergroups-desc": "Provides finer control over what userrights can be registered with which user groups",
 	"usergroupnameexists-error": "You cannot create a new user group with this name as it already exists.",
 	"usergroups-createnew": "(create new...)",
 	"usergroups-editgroup-delete": "Delete this user group <span class=\"important\" style=\"color:red\">(<strong>Warning</strong>: This is irreversible. To recreate this class, you must [[Special:UserGroups/new|make a new one]].)</span>",
