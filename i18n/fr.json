@@ -3,11 +3,12 @@
 		"authors": [
 			"Gomoko",
 			"Kc kennylau",
-			"Orlodrim"
+			"Orlodrim",
+			"Verdy p"
 		]
 	},
 	"usergroups": "Gestion des groupes utilisateur",
-	"usergroups-desc": "Fournit un contrôle plus fin sur ce quels droits utilisateur peuvent être accordés à quels groupes utilisateur.",
+	"usergroups-desc": "Permet d’affiner le contrôle sur les droits utilisateur et les groupes dans lesquels ils vont être enregistrés",
 	"usergroupnameexists-error": "Vous ne pouvez pas créer un nouveau groupe utilisateur avec ce nom, car il existe déjà.",
 	"usergroups-createnew": "(créer un nouveau…)",
 	"usergroups-editgroup-delete": "Supprimer ce groupe utilisateur <span class=\"important\" style=\"color:red\">(<strong>Avertissement</strong> : Ceci est irréversible. Pour recréer cette classe, vous devrez [[Special:UserGroups/new|en redéfinir une nouvelle]].)</span>",
