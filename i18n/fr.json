@@ -30,6 +30,6 @@
 	"nosuchusergroup": "Il n’y a aucun groupe utilisateur appelé « $1 ». Peut-être voulez-vous [[Special:UserGroups/new|créer]] ce nouveau groupe utilisateur ?",
 	"right-modifygroups": "Créer, modifier et supprimer les groupes utilisateur",
 	"logentry-usergroups-create": "$1 {{GENDER:$2|a créé}} un nouveau groupe utilisateur $7 « $4 » contenant : $5",
-	"logentry-usergroups-delete": "$1 {{GENDER:$2|a supprimé}} le groupe utilisateur « $4 ».",
+	"logentry-usergroups-delete": "$1 {{GENDER:$2|a supprimé}} le groupe d’utilisateurs « $4 ».",
 	"logentry-usergroups-modify": "$1 {{GENDER:$2|a modifié}} le groupe utilisateur « $4 ». $7 Ajouté $5 ; Supprimé $6"
 }
