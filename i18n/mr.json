@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"V.narsikar"
+			"V.narsikar",
+			"Tiven2240"
 		]
 	},
-	"usergroups": "सदस्य गट व्यवस्थापन"
+	"usergroups": "सदस्य गट व्यवस्थापन",
+	"usergroups-editgroup-reason": "कारण:"
 }
