@@ -347,7 +347,7 @@ class SpecialUserGroups extends SpecialPage {
 			if ( $groupid === 'new' ) {
 				$newgroupname = $request->getVal( 'newgroup' );
 				if ( $newgroupname === null || $newgroupname === '' ||
-					preg_match( Title::getTitleInvalidRegex(), $newgroupname ) ) {
+					preg_match( MediaWikiTitleCodec::getTitleInvalidRegex(), $newgroupname ) ) {
 						throw new ErrorPageError( 'invalidusergroupname-title', 'invalidusergroupname-error' );
 				}
 				$this->usergroup = new UserGroup( $newgroupname, false );
