@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Milicevic01",
-			"Rancher"
+			"Rancher",
+			"BadDog"
 		]
 	},
 	"usergroups": "Управљање корисничким групама",
@@ -10,7 +11,7 @@
 	"usergroupnameexists-error": "Корисничка група већ постоји.",
 	"usergroups-createnew": "(направи нову…)",
 	"usergroups-editgroup-delete": "Брисање корисничке групе <span class=\"important\" style=\"color:red\">(<strong>Упозорење</strong>: Ова радња је неповратна. Да бисте поново креирали ову класу, морате [[Special:UserGroups/new|направити нову групу]].)</span>",
-	"usergroups-editgroup-desc": "Изаберите корисничку групу са падајућег менија испод или креирајте нову помоћу опције „направи нову“.",
+	"usergroups-editgroup-desc": "Изаберите корисничку групу са падајућег менија испод или направите нову помоћу опције „направи нову“.",
 	"usergroups-editgroup-newgroup": "Унесите име нове корисничке групе:",
 	"usergroups-editgroup-reason": "Разлог:",
 	"usergroups-editgroup-revoke": "Подеси корисничку групу тако да одузима уместо што додељује права",
