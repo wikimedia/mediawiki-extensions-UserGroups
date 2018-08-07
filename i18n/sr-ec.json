@@ -24,7 +24,7 @@
 	"usergroups-log-revoke-switchon": "Промењено на одузимање;",
 	"usergroups-log-revoke-switchoff": "Промењено на додељивање;",
 	"action-modifygroups": "промена корисничких група",
-	"invalidusergroupname-title": "Неисправно име корисничке групе",
+	"invalidusergroupname-title": "Невалидно име корисничке групе",
 	"invalidusergroupname-error": "Наведено име нове корисничке групе је неисправно.\n\n[[Special:UserGroups|Назад]].",
 	"nosuchusergroup": "Није пронађена корисничка група под именом „$1“. Да ли сте желели да [[Special:UserGroups/new|направите]] нову корисничку групу?",
 	"right-modifygroups": "прављење, промена и брисање корисничких група",
