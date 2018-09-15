@@ -18,7 +18,7 @@
 	"usergroups-editgroup-save": "Сачувај измене",
 	"usergroups-editgroup-userrights": "Све доступне дозволе",
 	"usergroups-log-name": "Евиденција корисничких група",
-	"usergroups-log-header": "Ова евиденција снима промене у корисничким правима сваке групе.",
+	"usergroups-log-header": "Оваj дневник снима промене у корисничким правима сваке групе.",
 	"usergroups-log-none": "(нема)",
 	"usergroups-log-revoke": "одузимање",
 	"usergroups-log-revoke-switchon": "Промењено на одузимање;",
