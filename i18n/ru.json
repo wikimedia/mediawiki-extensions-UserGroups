@@ -2,13 +2,22 @@
 	"@metadata": {
 		"authors": [
 			"Okras",
-			"Mailman"
+			"Mailman",
+			"Vlad5250"
 		]
 	},
+	"usergroups": "Управление группами участников",
+	"usergroups-desc": "Обеспечивает более точное определение прав участников, которые можно задать для групп участников.",
+	"usergroupnameexists-error": "Вы не можете создать новую группу участников с этим названием, поскольку оно уже существует.",
 	"usergroups-createnew": "(создать новую…)",
-	"usergroups-editgroup-newgroup": "Название новой группы прав:",
+	"usergroups-editgroup-delete": "Удалить эту группу участников <span class=\"important\" style=\"color:red\">(Предупреждение: Это безвозвратно. Чтобы воссоздать этот класс, вы должны [[Special:UserGroups/new|создать новый]].)</span>",
+	"usergroups-editgroup-newgroup": "Введите название новой группы участников:",
 	"usergroups-editgroup-reason": "Причина:",
 	"usergroups-editgroup-save": "Сохранить изменения",
 	"usergroups-editgroup-userrights": "Все доступные разрешения",
-	"usergroups-log-none": "(нет)"
+	"usergroups-log-name": "Журнал групп участников",
+	"usergroups-log-header": "Это журнал изменений прав участников в каждой группе.",
+	"usergroups-log-none": "(нет)",
+	"action-modifygroups": "изменение групп участников",
+	"invalidusergroupname-title": "Неверное название группы участников"
 }
