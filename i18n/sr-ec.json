@@ -17,7 +17,7 @@
 	"usergroups-editgroup-revoke": "Подеси корисничку групу тако да одузима уместо што додељује права",
 	"usergroups-editgroup-save": "Сачувај измене",
 	"usergroups-editgroup-userrights": "Све доступне дозволе",
-	"usergroups-log-name": "Евиденција корисничких група",
+	"usergroups-log-name": "Дневник корисничких група",
 	"usergroups-log-header": "Оваj дневник снима промене у корисничким правима сваке групе.",
 	"usergroups-log-none": "(нема)",
 	"usergroups-log-revoke": "одузимање",
