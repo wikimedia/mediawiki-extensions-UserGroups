@@ -11,6 +11,7 @@
 	"usergroupnameexists-error": "Вы не можете создать новую группу участников с этим названием, поскольку оно уже существует.",
 	"usergroups-createnew": "(создать новую…)",
 	"usergroups-editgroup-delete": "Удалить эту группу участников <span class=\"important\" style=\"color:red\">(Предупреждение: Это безвозвратно. Чтобы воссоздать этот класс, вы должны [[Special:UserGroups/new|создать новый]].)</span>",
+	"usergroups-editgroup-desc": "Выберите группу участников из списка ниже, или создайте вашу с возможностью «создать новую...».",
 	"usergroups-editgroup-newgroup": "Введите название новой группы участников:",
 	"usergroups-editgroup-reason": "Причина:",
 	"usergroups-editgroup-save": "Сохранить изменения",
@@ -19,5 +20,6 @@
 	"usergroups-log-header": "Это журнал изменений прав участников в каждой группе.",
 	"usergroups-log-none": "(нет)",
 	"action-modifygroups": "изменение групп участников",
-	"invalidusergroupname-title": "Неверное название группы участников"
+	"invalidusergroupname-title": "Неверное название группы участников",
+	"right-modifygroups": "Создание, изменение и удаление групп участников"
 }
