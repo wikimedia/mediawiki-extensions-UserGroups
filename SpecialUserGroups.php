@@ -72,6 +72,7 @@ class SpecialUserGroups extends SpecialPage {
 		$this->getOutput()->setPageTitle( $this->msg( 'usergroups' ) );
 		$this->getOutput()->setArticleRelated( false );
 		$this->getOutput()->enableClientCache( false );
+		$this->getOutput()->addModules( 'ext.UserGroups' );
 		$this->buildHeader();
 		if ( $par !== null ) {
 			$this->buildMainForm( $par );
@@ -146,13 +147,6 @@ class SpecialUserGroups extends SpecialPage {
 		$this->getOutput()->addHTML(
 			'
 			' .
-			ResourceLoader::makeInlineScript( '
-				$(function() {
-					$("#groupname").change(function() {
-						location = $("#groupname option:selected").val();
-					});
-				});
-			' ) .
 			"\n" .
 			Xml::openElement(
 				'form',

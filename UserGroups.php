@@ -62,5 +62,12 @@ $wgAutoloadClasses['UserRight'] = __DIR__ . '/UserRights.php';
 $wgAvailableRights[] = 'modifygroups';
 $wgGroupPermissions['bureaucrat']['modifygroups'] = true;
 
+// ResourceLoader to load JS
+$wgResourceModules['ext.UserGroups'] = array(
+	'scripts' => 'resources/ext.UserGroups.js',
+	'localBasePath' => __DIR__,
+	'remoteExtPath' => 'UserGroups',
+);
+
 // This section is used by the extension to modify user groups on your wiki.
 // Unless you know what you're doing, PLEASE DO NOT EDIT THIS SECTION DIRECTLY!
