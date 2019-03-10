@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Vlad5250"
+			"Vlad5250",
+			"StanProg"
 		]
 	},
-	"usergroups-editgroup-userrights": "Всички налични разрешения"
+	"usergroups-editgroup-userrights": "Всички налични права"
 }
