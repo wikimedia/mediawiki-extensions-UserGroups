@@ -191,7 +191,7 @@ class SpecialUserGroups extends SpecialPage {
 		}
 		if ( !( in_array( $subpage, $groupnames, true ) || ( $subpage === 'new' ) ) ) {
 			$status = Status::newFatal( 'nosuchusergroup', $subpage );
-			$this->getOutput()->addWikiText( $status->getWikiText() );
+			$this->getOutput()->addWikiTextAsInterface( $status->getWikiText() );
 		} else {
 			$this->getOutput()->addHTML(
 				Xml::openElement(
