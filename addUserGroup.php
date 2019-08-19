@@ -36,8 +36,8 @@ require_once __DIR__ . '/Maintenance.php';
 class AddUserGroup extends Maintenance {
 	public function __construct() {
 		parent::__construct();
-		$this->mDescription = "Add a user group, either to a list of users " .
-				"or to the database. User group must be an \"explicit\" type.";
+		$this->addDescription( "Add a user group, either to a list of users " .
+				"or to the database. User group must be an \"explicit\" type." );
 		$this->addArg( 'group', "Name of the user group to add.", true );
 		$this->addOption( 'log', "Whether or not to log the actions onwiki.", false, false );
 		$this->addOption( 'performer', "If --log were set, you can also optionally " .
