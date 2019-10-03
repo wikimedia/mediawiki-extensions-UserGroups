@@ -5,6 +5,15 @@
 		]
 	},
 	"usergroups": "Gestione de le gruppe utinde",
+	"usergroups-desc": "Dèje 'nu condrolle cchiù precise sus a ce utinde ponne essere reggìstrate cu quale gruppe de utinde",
+	"usergroupnameexists-error": "Non ge puè ccrejà 'nu gruppe nuève cu stu nome purcé ggià ne stè une.",
+	"usergroups-createnew": "(ccreje nuève...)",
+	"usergroups-editgroup-delete": "Scangìlle stu gruppe utende <span class=\"important\" style=\"color:red\">(<strong>Iapre l'uecchije</strong>: Quiste non g'è annullabbele. Pe ccrejà arrete sta classe, tu n'ha [[Special:UserGroups/new|fa una nove]].)</span>",
+	"usergroups-editgroup-desc": "Scacchie 'u gruppe utende da l'elenghe a tendine aqquà sotte, o ccreje une tune cu l'opzione \"ccreje nuève...\".",
+	"usergroups-editgroup-newgroup": "Mitte 'u nome d'u gruppe utende nuève tune:",
 	"usergroups-editgroup-reason": "Mutive:",
+	"usergroups-editgroup-save": "Reggistre le cangiaminde",
+	"usergroups-editgroup-userrights": "Tutte le permesse disponibbele",
+	"usergroups-log-none": "(nisciune)",
 	"invalidusergroupname-error": "'U nome ca è mise pu gruppe utende nuéve non g'è valide.\n\n[[Special:UserGroups|Tuérne]]."
 }
