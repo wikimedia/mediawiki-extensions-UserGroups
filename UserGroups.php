@@ -25,49 +25,18 @@
  * @link https://www.mediawiki.org/wiki/Extension:UserGroups Documentation
  * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
  */
-if ( !defined( 'MEDIAWIKI' ) ) {
-	echo <<<EOT
-To use this extension, please include the following line in your LocalSettings.php:
-require_once( "\$IP/extensions/UserGroups/UserGroups.php" );
-EOT;
-	exit( 1 );
+
+if ( function_exists( 'wfLoadExtension' ) ) {
+	wfLoadExtension( 'UserGroups' );
+	// Keep i18n globals so mergeMessageFileList.php doesn't break
+	$wgMessagesDirs['UserGroups'] = __DIR__ . '/i18n';
+	$wgExtensionMessagesFiles['UserGroupsAlias'] = __DIR__ . '/UserGroups.alias.php';
+	wfWarn(
+		'Deprecated PHP entry point used for the UserGroups extension. ' .
+		'Please use wfLoadExtension instead, ' .
+		'see https://www.mediawiki.org/wiki/Extension_registration for more details.'
+	);
+	return;
+} else {
+	die( 'This version of the UserGroups extension requires MediaWiki 1.29+' );
 }
-
-$wgExtensionCredits['other'][] = array(
-	'author' => 'Withoutaname',
-	'descriptionmsg' => 'usergroups-desc',
-	'name' => 'UserGroups',
-	'path' => __FILE__,
-	'url' => 'https://www.mediawiki.org/wiki/Extension:UserGroups',
-	'version' => '1.0.0',
-	'license-name' => 'GPL-2.0-or-later',
-);
-
-// For internationalization
-$wgExtensionMessagesFiles['SpecialUserGroupsAliases'] = __DIR__ . '/UserGroups.alias.php';
-$wgLogTypes[] = 'usergroups';
-$wgLogNames['usergroups'] = 'usergroups-log-name';
-$wgLogHeaders['usergroups'] = 'usergroups-log-header';
-$wgLogActionsHandlers['usergroups/*'] = 'LogFormatter';
-$wgMessagesDirs['UserGroups'] = __DIR__ . '/i18n';
-$wgSpecialPages['UserGroups'] = 'SpecialUserGroups';
-
-// For autoloading
-$wgAutoloadClasses['AddUserGroup'] = __DIR__ . '/addUserGroup.php';
-$wgAutoloadClasses['SpecialUserGroups'] = __DIR__ . '/SpecialUserGroups.php';
-$wgAutoloadClasses['UserGroup'] = __DIR__ . '/UserGroup.php';
-$wgAutoloadClasses['UserRight'] = __DIR__ . '/UserRights.php';
-
-// New permissions
-$wgAvailableRights[] = 'modifygroups';
-$wgGroupPermissions['bureaucrat']['modifygroups'] = true;
-
-// ResourceLoader to load JS
-$wgResourceModules['ext.UserGroups'] = array(
-	'scripts' => 'resources/ext.UserGroups.js',
-	'localBasePath' => __DIR__,
-	'remoteExtPath' => 'UserGroups',
-);
-
-// This section is used by the extension to modify user groups on your wiki.
-// Unless you know what you're doing, PLEASE DO NOT EDIT THIS SECTION DIRECTLY!
