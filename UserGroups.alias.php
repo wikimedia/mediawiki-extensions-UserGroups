@@ -28,6 +28,11 @@ $specialPageAliases['bgn'] = array(
 	'UserGroups' => array( 'کارمرزوکانی_گروپ_ئان' ),
 );
 
+/** Bosnian (bosanski) */
+$specialPageAliases['bs'] = array(
+	'UserGroups' => array( 'KorisničkeGrupe' ),
+);
+
 /** German (Deutsch) */
 $specialPageAliases['de'] = array(
 	'UserGroups' => array( 'Benutzergruppen' ),
@@ -43,6 +48,11 @@ $specialPageAliases['he'] = array(
 	'UserGroups' => array( 'קבוצות_משתמשים' ),
 );
 
+/** Croatian (hrvatski) */
+$specialPageAliases['hr'] = array(
+	'UserGroups' => array( 'SuradničkeGrupe' ),
+);
+
 /** Upper Sorbian (hornjoserbsce) */
 $specialPageAliases['hsb'] = array(
 	'UserGroups' => array( 'Wužiwarske_skupiny' ),
@@ -56,6 +66,16 @@ $specialPageAliases['ko'] = array(
 /** Macedonian (македонски) */
 $specialPageAliases['mk'] = array(
 	'UserGroups' => array( 'КорисничкиГрупи' ),
+);
+
+/** Serbian Cyrillic (српски (ћирилица)) */
+$specialPageAliases['sr-ec'] = array(
+	'UserGroups' => array( 'КорисничкеГрупе' ),
+);
+
+/** Serbian Latin (srpski (latinica)) */
+$specialPageAliases['sr-el'] = array(
+	'UserGroups' => array( 'KorisničkeGrupe' ),
 );
 
 /** Simplified Chinese (中文（简体）‎) */
