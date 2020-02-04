@@ -54,6 +54,7 @@ class AddUserGroup extends Maintenance {
 				"revoke their rights from users instead of granting them.", false, false );
 		$this->addOption( 'touser', "Add this user group to a single user or to a " .
 				"comma-separated list of users. Cannot be used with --todb.", false, true );
+		$this->requireExtension( 'UserGroups' );
 	}
 
 	public function execute() {
@@ -158,5 +159,5 @@ class AddUserGroup extends Maintenance {
 	}
 }
 
-$maintClass = "AddUserGroup";
+$maintClass = AddUserGroup::class;
 require_once RUN_MAINTENANCE_IF_MAIN;
