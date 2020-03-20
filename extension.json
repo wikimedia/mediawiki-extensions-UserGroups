@@ -42,7 +42,7 @@
 	},
 	"AutoloadClasses": {
 		"AddUserGroup": "maintenance/addUserGroup.php",
-		"SpecialUserGroups": "specials/SpecialUserGroups.php",
+		"SpecialUserGroups": "includes/specials/SpecialUserGroups.php",
 		"UserGroup": "includes/UserGroup.php",
 		"UserRight": "includes/UserRights.php"
 	},
