@@ -23,7 +23,7 @@
 	"invalidusergroupname-error": "Nimi jonka syötit uudelle käyttäjäryhmälle on virheellinen.\n\n[[Special:UserGroups|Takaisin]].",
 	"nosuchusergroup": "Täällä ei ole käyttäjäryhmää ”$1”. Haluaisitko kenties [[Special:UserGroups/new|luoda]] tämän uuden käyttäjäryhmän?",
 	"right-modifygroups": "Luo, muokkaa ja poista käyttäjäryhmiä",
-	"logentry-usergroups-create": "$1 {{GENDER:$2|loi}} uuden $7käyttäjäryhmän ”$4”, johon sisältyy: $5",
+	"logentry-usergroups-create": "$1 {{GENDER:$2|loi}} uuden $7 käyttäjäryhmän ”$4”, johon sisältyy: $5",
 	"logentry-usergroups-delete": "$1 {{GENDER:$2|poisti}} käyttäjäryhmän ”$4”.",
-	"logentry-usergroups-modify": "$1 {{GENDER:$2|muokkasi}} käyttäjäryhmää ”$4”. $7Lisätty $5; poistettu $6"
+	"logentry-usergroups-modify": "$1 {{GENDER:$2|muokkasi}} käyttäjäryhmää ”$4”. $7 Lisätty $5; poistettu $6"
 }
