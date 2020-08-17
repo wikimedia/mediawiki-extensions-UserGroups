@@ -3,6 +3,7 @@
 		"authors": [
 			"Jopparn",
 			"Lokal Profil",
+			"Sabelöga",
 			"WikiPhoenix"
 		]
 	},
@@ -28,7 +29,7 @@
 	"invalidusergroupname-error": "Namnet som du angav för din nya användargrupp är ogiltigt.\n\n[[Special:UserGroups|Tillbaka]]",
 	"nosuchusergroup": "Kunde inte hitta någon användargrupp med namnet \"$1\". Ville du kanske [[Special:UserGroups/new|skapa]] denna nya användargrupp?",
 	"right-modifygroups": "Skapa, ändra eller radera användargrupper",
-	"logentry-usergroups-create": "$1 {{GENDER:$2|skapade}} ny $7användargrupp \"$4\" innehållande: $5",
+	"logentry-usergroups-create": "$1 {{GENDER:$2|skapade}} ny $7 användargrupp \"$4\" innehållande: $5",
 	"logentry-usergroups-delete": "$1 {{GENDER:$2|raderade}} användargrupp \"$4\".",
-	"logentry-usergroups-modify": "$1 {{GENDER:$2|ändrade}} användargrupp \"$4\". $7La till $5; Tog bort $6"
+	"logentry-usergroups-modify": "$1 {{GENDER:$2|ändrade}} användargrupp \"$4\". $7 La till $5; Tog bort $6"
 }

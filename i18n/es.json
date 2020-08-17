@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Alvaro",
 			"Fitoschido",
 			"Macofe"
 		]
@@ -24,5 +25,5 @@
 	"nosuchusergroup": "No se encontró ningún grupo de usuarios llamado «$1». ¿Quieres [[Special:UserGroups/new|crearlo]]?",
 	"right-modifygroups": "Crear, modificar y eliminar grupos de usuarios",
 	"logentry-usergroups-delete": "$1 {{GENDER:$2|eliminó}} el grupo de usuarios «$4».",
-	"logentry-usergroups-modify": "$1 {{GENDER:$2|modificó}} el grupo de usuarios «$4». $7Añadido $5; eliminado $6"
+	"logentry-usergroups-modify": "$<span translate=\"no\" class=\"notranslate\">1</span> {{GÉNERO:$2|usuario}} modificado grupo \"$<span translate=\"no\" class=\"notranslate\">4</span>\". $<span translate=\"no\" class=\"notranslate\">7</span> Añadió $<span translate=\"no\" class=\"notranslate\">5</span>; Sacado $<span translate=\"no\" class=\"notranslate\">6</span>"
 }

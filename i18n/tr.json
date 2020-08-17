@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"BaRaN6161 TURK"
+			"BaRaN6161 TURK",
+			"MuratTheTurkish"
 		]
 	},
 	"usergroups": "Kullanıcı grupları yönetimi",
@@ -28,5 +29,5 @@
 	"right-modifygroups": "Kullanıcı grupları oluştur, değiştir ve sil",
 	"logentry-usergroups-create": "$1, içeren yeni $7 kullanıcı grubu \"$4\" {{GENDER:$2|oluşturdu}}: $5",
 	"logentry-usergroups-delete": "$1, \"$4\" kullanıcı grubu {{GENDER:$2|sildi}}.",
-	"logentry-usergroups-modify": "$1, \"$4\" kullanıcı grubu {{GENDER:$2|değiştirdi}}. $7 $5 Ekledi; $6 Kaldırıldı"
+	"logentry-usergroups-modify": "$1, \"$4\" kullanıcı grubu {{GENDER:$2|değiştirdi}}. $7 $5 eklendi; $6 kaldırıldı"
 }
