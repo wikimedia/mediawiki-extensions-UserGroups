@@ -23,7 +23,7 @@
 	"invalidusergroupname-error": "Il nome inserito per il nuovo gruppo utente non è valido.\n\n[[Special:UserGroups|Ritorna]].",
 	"nosuchusergroup": "Non è stato trovato alcun gruppo utente chiamato \"$1\". Vuoi forse [[Special:UserGroups/new|creare]] questo nuovo gruppo utente?",
 	"right-modifygroups": "Crea, modifica e cancella gruppi di utenti",
-	"logentry-usergroups-create": "$1 {{GENDER:$2|ha creato}} un nuovo $7gruppo utente \"$4\", contenente: $5",
+	"logentry-usergroups-create": "$1 {{GENDER:$2|ha creato}} un nuovo $7 gruppo utente \"$4\", contenente: $5",
 	"logentry-usergroups-delete": "$1 {{GENDER:$2|ha cancellato}} il gruppo utente \"$4\".",
-	"logentry-usergroups-modify": "$1 {{GENDER:$2|ha modificato}} il gruppo \"$4\". $7Ha aggiunto $5; Ha rimosso $6"
+	"logentry-usergroups-modify": "$1 {{GENDER:$2|ha modificato}} il gruppo \"$4\". $7 ha aggiunto $5; ha rimosso $6"
 }
