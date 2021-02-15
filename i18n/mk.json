@@ -26,7 +26,7 @@
 	"invalidusergroupname-error": "Внесеното име на новата корисничка група е неважечко.\n\n[[Special:UserGroups|Назад]].",
 	"nosuchusergroup": "Не пронајдов корисничка група наречена „$1“. Дали можеби сакавте да ја [[Special:UserGroups/new|создадете]] оваа корисничка група?",
 	"right-modifygroups": "Создавање, менување и бришење на кориснички групи",
-	"logentry-usergroups-create": "$1 {{GENDER:$2|создаде}} нова $7корисничка група „$4“ што содржи: $5",
+	"logentry-usergroups-create": "$1 {{GENDER:$2|создаде}} нова $7 корисничка група „$4“ што содржи: $5",
 	"logentry-usergroups-delete": "$1 ја {{GENDER:$2|избриша}} корисничката група „$4“.",
-	"logentry-usergroups-modify": "$1 ја {{GENDER:$2|измени}} корисничката група „$4“. $7Додадено $5; Отстрането $6"
+	"logentry-usergroups-modify": "$1 ја {{GENDER:$2|измени}} корисничката група „$4“. $7 Додадено $5; Отстрането $6"
 }
