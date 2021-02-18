@@ -26,7 +26,7 @@
 	"invalidusergroupname-error": "'U nome ca è mise pu gruppe utende nuéve non g'è valide.\n\n[[Special:UserGroups|Tuérne]].",
 	"nosuchusergroup": "Non g'ha state acchiate nisciune gruppe utende chiamate \"$1\". No è ca vuè ccu [[Special:UserGroups/new|ccreje]] stu gruppe utende nuève?",
 	"right-modifygroups": "Ccreje, cange e scangìlle le gruppe utinde",
-	"logentry-usergroups-create": "$1 {{GENDER:$2|ave ccrejate}} 'nu $7gruppe utende nuève \"$4\" ca tène: $5",
+	"logentry-usergroups-create": "$1 {{GENDER:$2|ave ccrejate}} 'nu $7 gruppe utende nuève \"$4\" ca tène: $5",
 	"logentry-usergroups-delete": "$1 {{GENDER:$2|ave scangellate}} 'u gruppe utende \"$4\".",
-	"logentry-usergroups-modify": "$1 {{GENDER:$2|ave cangiate}} 'u gruppe utende \"$4\". $7Aggiunde $5; Luate $6"
+	"logentry-usergroups-modify": "$1 {{GENDER:$2|ave cangiate}} 'u gruppe utende \"$4\". $7 Aggiunde $5; Luate $6"
 }
