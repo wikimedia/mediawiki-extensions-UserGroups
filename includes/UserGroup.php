@@ -26,6 +26,8 @@
  * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
  */
 
+use MediaWiki\MediaWikiServices;
+
 /**
  * This class represents the User Groups feature within MediaWiki, and
  * includes both "core" or hardcoded user groups as well as custom or
@@ -686,9 +688,10 @@ class UserGroup {
 	 */
 	public function getTitlePage() {
 		$message = wfMessage( "grouppage-$this->nameInternal" );
+		$namespaceInfo = MediaWikiServices::getInstance()->getNamespaceInfo();
 		return !$message->isBlank() ?
 				$message->inContentLanguage()->text() :
-				MWNamespace::getCanonicalName( NS_PROJECT ) . ':' . $this->nameInternal;
+				$namespaceInfo->getCanonicalName( NS_PROJECT ) . ':' . $this->nameInternal;
 	}
 
 	/**
