@@ -5,5 +5,7 @@
 		]
 	},
 	"usergroups-editgroup-reason": "Mutivu:",
-	"usergroups-log-none": "(nuddu)"
+	"usergroups-editgroup-save": "Sarva li canciamenti",
+	"usergroups-log-none": "(nuddu)",
+	"action-modifygroups": "canciari li gruppi utenti"
 }
