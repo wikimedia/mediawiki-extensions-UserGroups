@@ -2,12 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Guycn2",
-			"SGTTechnologicBunny"
+			"SGTTechnologicBunny",
+			"Amire80"
 		]
 	},
 	"usergroups-desc": "מאפשר בקרה על הרשאות למשתמשים שנמצאים בקבוצות משתמשים מסוימות.",
 	"action-modifygroups": "לשנות קבוצות משתמשים",
-	"invalidusergroupname-error": "השם שהזנת עבור קבוצת משתמשים חדשה אינו חוקי.\n\nחזור אל [[{{#special:UserGroups}}]].",
+	"invalidusergroupname-error": "השם שהזנת עבור קבוצת משתמשים חדשה אינו תקין.\n\n[[Special:UserGroups|חזרה]].",
 	"nosuchusergroup": "אין קבוצת משתמשים שנקראת \"$1\". אולי תרצה  [[Special:UserGroups/new|ליצור]] קבוצת משתמשים חדשה כזו?",
 	"right-modifygroups": "יצירה, שינוי ומחיקה של קבוצות משתמשים"
 }

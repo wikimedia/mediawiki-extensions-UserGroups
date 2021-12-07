@@ -5,7 +5,8 @@
 			"Robin van der Vliet",
 			"Robin0van0der0vliet",
 			"SPQRobin",
-			"Siebrand"
+			"Siebrand",
+			"McDutchie"
 		]
 	},
 	"usergroups": "Gebruikersgroepenbeheer",
@@ -24,5 +25,5 @@
 	"invalidusergroupname-error": "De naam die u hebt ingevoerd voor uw nieuwe gebruikersgroep is ongeldig.\n\n[[Special:UserGroups|Ga terug]].",
 	"right-modifygroups": "Maak, wijzig en verwijder gebruikersgroepen",
 	"logentry-usergroups-delete": "$1 {{GENDER:$2|verwijderde}} gebruikersgroep \"$4\".",
-	"logentry-usergroups-modify": "$1 {{GENDER:$2|wijzigde}} gebruikersgroep \"$4\". $7 Toegevoegd $5; Verwijderd $6"
+	"logentry-usergroups-modify": "$1 {{GENDER:$2|heeft}} de gebruikersgroep \"$4\" gewijzigd. $7 Toegevoegd $5; Verwijderd $6"
 }
