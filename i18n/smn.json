@@ -1,8 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Yupik"
+			"Yupik",
+			"Seipinne"
 		]
 	},
-	"usergroups-editgroup-save": "Vuorkkii nubástusâid"
+	"usergroups": "Kevtteejuávhui haldâšem",
+	"usergroups-editgroup-reason": "Suijâ:",
+	"usergroups-editgroup-save": "Vuorkkii nubástusâid",
+	"action-modifygroups": "mute kevtteejuávhuid"
 }
