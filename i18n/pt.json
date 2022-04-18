@@ -6,7 +6,7 @@
 		]
 	},
 	"usergroups": "Gestão de grupos de utilizadores",
-	"usergroups-desc": "Fornece um controlo melhor sobre quais os privilégios que podem ser registados com cada grupo de utilizadores.",
+	"usergroups-desc": "Permite melhor controlo sobre que privilégios podem ser registados com cada grupo de utilizadores",
 	"usergroupnameexists-error": "Não pode criar um novo grupo de utilizadores com este nome, pois já existe.",
 	"usergroups-createnew": "(criar novo...)",
 	"usergroups-editgroup-delete": "Eliminar este grupo de utilizadores <span class=\"important\" style=\"color:red\">(<strong>AVISO</strong>: Isto é irreversível. Para recriar esta classe, terá de [[Special:UserGroups/new|definir uma nova]].)</span>",
@@ -28,6 +28,6 @@
 	"nosuchusergroup": "Não foi encontrado nenhum grupo de utilizadores denominado \"$1\". Pretende [[Special:UserGroups/new|criar]] este novo grupo?",
 	"right-modifygroups": "Criar, alterar e eliminar grupos de utilizadores",
 	"logentry-usergroups-create": "$1 {{GENDER:$2|criou}} um novo grupo de utilizadores de $7 \"$4\" que contém: $5",
-	"logentry-usergroups-delete": "$1 {{GENDER:$2|eliminou}} o grupo de utilizadores \"$4\".",
+	"logentry-usergroups-delete": "$1 eliminou o grupo de utilizadores \"$4\".{{GENDER:$2|}}",
 	"logentry-usergroups-modify": "$1 {{GENDER:$2|modificou}} o grupo de utilizadores \"$4\". Adicionados: $7 adicionados $5; Removidos: $6"
 }
