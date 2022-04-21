@@ -15,7 +15,7 @@
 	"usergroups-editgroup-delete": "Supprimer ce groupe utilisateur <span class=\"important\" style=\"color:red\">(<strong>Avertissement</strong> : Ceci est irréversible. Pour recréer cette classe, vous devrez [[Special:UserGroups/new|en redéfinir une nouvelle]].)</span>",
 	"usergroups-editgroup-desc": "Sélectionnez un groupe utilisateur depuis la liste déroulante ci-dessous et créez le vôtre avec l’option « créer un nouveau… ».",
 	"usergroups-editgroup-newgroup": "Entrer le nom de votre nouveau groupe utilisateur :",
-	"usergroups-editgroup-reason": "Motif :",
+	"usergroups-editgroup-reason": "Motif :",
 	"usergroups-editgroup-revoke": "Définir ce groupe utilisateur pour révoquer au lieu d’accorder des droits",
 	"usergroups-editgroup-save": "Enregistrer les modifications",
 	"usergroups-editgroup-userrights": "Tous les droits disponibles",
