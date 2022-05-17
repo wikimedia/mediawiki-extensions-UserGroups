@@ -7,6 +7,7 @@
 		]
 	},
 	"usergroups-desc": "מאפשר בקרה על הרשאות למשתמשים שנמצאים בקבוצות משתמשים מסוימות.",
+	"usergroups-editgroup-reason": "סיבה:",
 	"action-modifygroups": "לשנות קבוצות משתמשים",
 	"invalidusergroupname-error": "השם שהזנת עבור קבוצת משתמשים חדשה אינו תקין.\n\n[[Special:UserGroups|חזרה]].",
 	"nosuchusergroup": "אין קבוצת משתמשים שנקראת \"$1\". אולי תרצה  [[Special:UserGroups/new|ליצור]] קבוצת משתמשים חדשה כזו?",
