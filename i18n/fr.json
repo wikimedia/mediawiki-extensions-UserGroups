@@ -12,7 +12,7 @@
 	"usergroups-desc": "Permet d’affiner le contrôle sur les droits utilisateur et les groupes dans lesquels ils vont être enregistrés",
 	"usergroupnameexists-error": "Vous ne pouvez pas créer un nouveau groupe utilisateur avec ce nom, car il existe déjà.",
 	"usergroups-createnew": "(créer un nouveau…)",
-	"usergroups-editgroup-delete": "Supprimer ce groupe utilisateur <span class=\"important\" style=\"color:red\">(<strong>Avertissement</strong> : Ceci est irréversible. Pour recréer cette classe, vous devrez [[Special:UserGroups/new|en redéfinir une nouvelle]].)</span>",
+	"usergroups-editgroup-delete": "Supprimer ce groupe utilisateur <span class=\"important\" style=\"color:red\">(<strong>Avertissement :</strong> ceci est irréversible ; pour recréer cette classe, vous devrez [[Special:UserGroups/new|en redéfinir une nouvelle]].)</span>",
 	"usergroups-editgroup-desc": "Sélectionnez un groupe utilisateur depuis la liste déroulante ci-dessous et créez le vôtre avec l’option « créer un nouveau… ».",
 	"usergroups-editgroup-newgroup": "Saisissez le nom de votre nouveau groupe d’utilisateurs :",
 	"usergroups-editgroup-reason": "Motif :",
