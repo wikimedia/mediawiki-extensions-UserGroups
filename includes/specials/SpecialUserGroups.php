@@ -166,7 +166,7 @@ class SpecialUserGroups extends SpecialPage {
 			) .
 			Xml::closeElement( 'p' ) .
 			"\n" .
-			Xml::openElement( 'select', array( 'name' => 'groupname', 'id' => 'groupname' ) ) .
+			Xml::openElement( 'select', array( 'name' => 'groupname', 'id' => 'groupname', 'onchange' => 'javascript:self.location=this.options[this.selectedIndex].value; return true;' ) ) .
 			"\n" .
 			$options .
 			"\n" .
