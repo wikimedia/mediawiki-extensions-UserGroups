@@ -13,7 +13,7 @@
 	"usergroups-editgroup-newgroup": "Unesite ime nove korisničke grupe:",
 	"usergroups-editgroup-reason": "Razlog:",
 	"usergroups-editgroup-revoke": "Zadaj grupi oduzimanje umjesto dodijeljivanja prava",
-	"usergroups-editgroup-save": "Spremi promjene",
+	"usergroups-editgroup-save": "Sačuvaj izmjene",
 	"usergroups-editgroup-userrights": "Sve dostupne dozvole",
 	"usergroups-log-name": "Evidencija korisničkih grupa",
 	"usergroups-log-header": "Ovaj dnevnik snima izmjene u korisničkim pravima svake grupe.",
