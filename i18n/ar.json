@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"ديفيد"
+			"ديفيد",
+			"Meno25"
 		]
 	},
 	"usergroups": "إدارة مجموعات المستخدمين",
@@ -26,7 +27,7 @@
 	"invalidusergroupname-error": "الاسم الذي أدخلته لمجموعة المستخدمين الجديدة غير صالح.\n\n[[Special:UserGroups|العودة]].",
 	"nosuchusergroup": "لم يتم العثور على مجموعة مستخدمين تسمى \"$1\"، ربما أردت [[Special:UserGroups/new| إنشاء]] مجموعة المستخدم الجديدة هذه؟",
 	"right-modifygroups": "إنشاء وتعديل وحذف مجموعات المستخدمين",
-	"logentry-usergroups-create": "$1 {{GENDER:$2|أنشأ|أنشأ}} مجموعة المستخدمين الجديدة $7 \"$4\" تحتوي على: $5",
+	"logentry-usergroups-create": "$1 {{GENDER:$2| تم إنشاء}} مجموعة مستخدمين جديدة $7 أمريكية \" $4 \" تحتوي على: $5",
 	"logentry-usergroups-delete": "$1 {{GENDER:$2|حذف|حذفت}} مجموعة المستخدمين \"$4\".",
-	"logentry-usergroups-modify": "$1 {{GENDER:$2|عدل|عدلت}} مجموعة المستخدمين \"$4\": $7 تمت إضافة $5، تمت إزالة $6"
+	"logentry-usergroups-modify": "$1 {{GENDER:$2| تعديل}} مجموعة المستخدمين \" $4 \". تمت إضافة $7 $5 ؛ تمت إزالة $6"
 }
