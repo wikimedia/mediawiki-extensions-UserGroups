@@ -5,8 +5,8 @@
 		]
 	},
 	"usergroups-editgroup-reason": "Razlog:",
-	"usergroups-log-none": "(noben/a)",
+	"usergroups-log-none": "(nobena)",
 	"usergroups-log-revoke-switchon": "Preklopi na preklicni tip;",
 	"usergroups-log-revoke-switchoff": "Preklopi na nepreklicni tip;",
-	"logentry-usergroups-modify": "$1 je {{GENDER:$2|spremenil|spremenila|spremenil/a}} uporabniško skupino »$4«. $7 Dodano: $5; odstranjeno: $6"
+	"logentry-usergroups-modify": "$1 je {{GENDER:$2|spremenil|spremenila|spremenil_a}} uporabniško skupino »$4«. $7 Dodano: $5; odstranjeno: $6"
 }
