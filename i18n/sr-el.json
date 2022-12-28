@@ -28,7 +28,7 @@
 	"invalidusergroupname-error": "Navedeno ime nove korisničke grupe je neispravno.\n\n[[Special:UserGroups|Nazad]].",
 	"nosuchusergroup": "Nije pronađena korisnička grupa pod imenom „$1“. Da li ste želeli da [[Special:UserGroups/new|napravite]] novu korisničku grupu?",
 	"right-modifygroups": "pravljenje, promena i brisanje korisničkih grupa",
-	"logentry-usergroups-create": "$1 je {{GENDER:$2|napravio|napravila}} novu $7korisničku grupu „$4“ koja sadrži: $5",
+	"logentry-usergroups-create": "$1 je {{GENDER:$2|napravio|napravila}} novu $7 korisničku grupu „$4” koja sadrži: $5",
 	"logentry-usergroups-delete": "$1 je {{GENDER:$2|obrisao|obrisala}} korisničku grupu „$4“.",
-	"logentry-usergroups-modify": "$1 je {{GENDER:$2|izmenio|izmenila}} korisničku grupu „$4“. $7Dodato $5; Uklonjeno $6"
+	"logentry-usergroups-modify": "$1 je {{GENDER:$2|izmenio|izmenila}} korisničku grupu „$4”. $7 Dodato $5; Uklonjeno $6"
 }
