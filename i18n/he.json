@@ -6,11 +6,11 @@
 			"Amire80"
 		]
 	},
-	"usergroups-desc": "מאפשר בקרה על הרשאות למשתמשים שנמצאים בקבוצות משתמשים מסוימות.",
+	"usergroups-desc": "אפשרות לעשות בקרה מדויקת יותר על אילו הרשאות משתמש אפשר לתת לאילו קבוצות משתמשים",
 	"usergroups-editgroup-reason": "סיבה:",
 	"usergroups-editgroup-save": "שמירת השינויים",
 	"action-modifygroups": "לשנות קבוצות משתמשים",
 	"invalidusergroupname-error": "השם שהזנת עבור קבוצת משתמשים חדשה אינו תקין.\n\n[[Special:UserGroups|חזרה]].",
-	"nosuchusergroup": "אין קבוצת משתמשים שנקראת \"$1\". אולי תרצה  [[Special:UserGroups/new|ליצור]] קבוצת משתמשים חדשה כזו?",
+	"nosuchusergroup": "אין קבוצת משתמשים שנקראת \"$1\". אולי רצית [[Special:UserGroups/new|ליצור]] את קבוצת משתמשים החדשה הזאת?",
 	"right-modifygroups": "יצירה, שינוי ומחיקה של קבוצות משתמשים"
 }
