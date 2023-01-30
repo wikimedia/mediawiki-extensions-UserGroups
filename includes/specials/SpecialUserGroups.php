@@ -99,7 +99,9 @@ class SpecialUserGroups extends SpecialPage {
 		$logentry = new ManualLogEntry( 'usergroups', $subtype );
 		$logentry->setPerformer( $user );
 		$logentry->setTarget( parent::getTitleFor( 'UserGroups', $usergroup->getName() ) );
-		$logentry->setComment( $comment );
+		if ( $comment !== null ) {
+			$logentry->setComment( $comment );
+		}
 		$addrights = $addrights ? implode( ', ', $addrights ) :
 					wfMessage( 'usergroups-log-none' )->text();
 		$removerights = $removerights ? implode( ', ', $removerights ) :
@@ -353,6 +355,7 @@ class SpecialUserGroups extends SpecialPage {
 			}
 			if ( $this->usergroup ) {
 				$reason = $request->getVal( 'wpReason' ) ?: null;
+				$switched = false;
 				if ( $request->getCheck( 'wpUsergroupDelete' ) ) {
 					$this->usergroup->delete();
 					self::addLogEntry( $this->user, "delete", $this->usergroup, $reason );
