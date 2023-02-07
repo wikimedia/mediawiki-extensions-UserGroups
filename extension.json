@@ -44,7 +44,7 @@
 		"AddUserGroup": "maintenance/addUserGroup.php",
 		"SpecialUserGroups": "includes/specials/SpecialUserGroups.php",
 		"UserGroup": "includes/UserGroup.php",
-		"UserRight": "includes/UserRights.php"
+		"UserRights": "includes/UserRights.php"
 	},
 	"ResourceModules": {
 		"ext.UserGroups": {

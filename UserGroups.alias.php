@@ -6,84 +6,84 @@
  * @ingroup Extensions
  */
 
-$specialPageAliases = array();
+$specialPageAliases = [];
 
 /** English (English) */
-$specialPageAliases['en'] = array(
-	'UserGroups' => array( 'UserGroups' ),
-);
+$specialPageAliases['en'] = [
+	'UserGroups' => [ 'UserGroups' ],
+];
 
 /** Arabic (العربية) */
-$specialPageAliases['ar'] = array(
-	'UserGroups' => array( 'مجموعات_المستخدم' ),
-);
+$specialPageAliases['ar'] = [
+	'UserGroups' => [ 'مجموعات_المستخدم' ],
+];
 
 /** Egyptian Arabic (مصرى) */
-$specialPageAliases['arz'] = array(
-	'UserGroups' => array( 'مجموعات_اليوزر' ),
-);
+$specialPageAliases['arz'] = [
+	'UserGroups' => [ 'مجموعات_اليوزر' ],
+];
 
 /** Western Balochi (بلوچی رخشانی) */
-$specialPageAliases['bgn'] = array(
-	'UserGroups' => array( 'کارمرزوکانی_گروپ_ئان' ),
-);
+$specialPageAliases['bgn'] = [
+	'UserGroups' => [ 'کارمرزوکانی_گروپ_ئان' ],
+];
 
 /** Bosnian (bosanski) */
-$specialPageAliases['bs'] = array(
-	'UserGroups' => array( 'KorisničkeGrupe' ),
-);
+$specialPageAliases['bs'] = [
+	'UserGroups' => [ 'KorisničkeGrupe' ],
+];
 
 /** German (Deutsch) */
-$specialPageAliases['de'] = array(
-	'UserGroups' => array( 'Benutzergruppen' ),
-);
+$specialPageAliases['de'] = [
+	'UserGroups' => [ 'Benutzergruppen' ],
+];
 
 /** Persian (فارسی) */
-$specialPageAliases['fa'] = array(
-	'UserGroups' => array( 'گروه‌های_کاربری' ),
-);
+$specialPageAliases['fa'] = [
+	'UserGroups' => [ 'گروه‌های_کاربری' ],
+];
 
 /** Hebrew (עברית) */
-$specialPageAliases['he'] = array(
-	'UserGroups' => array( 'קבוצות_משתמשים' ),
-);
+$specialPageAliases['he'] = [
+	'UserGroups' => [ 'קבוצות_משתמשים' ],
+];
 
 /** Croatian (hrvatski) */
-$specialPageAliases['hr'] = array(
-	'UserGroups' => array( 'SuradničkeGrupe' ),
-);
+$specialPageAliases['hr'] = [
+	'UserGroups' => [ 'SuradničkeGrupe' ],
+];
 
 /** Upper Sorbian (hornjoserbsce) */
-$specialPageAliases['hsb'] = array(
-	'UserGroups' => array( 'Wužiwarske_skupiny' ),
-);
+$specialPageAliases['hsb'] = [
+	'UserGroups' => [ 'Wužiwarske_skupiny' ],
+];
 
 /** Korean (한국어) */
-$specialPageAliases['ko'] = array(
-	'UserGroups' => array( '사용자그룹' ),
-);
+$specialPageAliases['ko'] = [
+	'UserGroups' => [ '사용자그룹' ],
+];
 
 /** Macedonian (македонски) */
-$specialPageAliases['mk'] = array(
-	'UserGroups' => array( 'КорисничкиГрупи' ),
-);
+$specialPageAliases['mk'] = [
+	'UserGroups' => [ 'КорисничкиГрупи' ],
+];
 
 /** Serbian Cyrillic (српски (ћирилица)) */
-$specialPageAliases['sr-ec'] = array(
-	'UserGroups' => array( 'КорисничкеГрупе' ),
-);
+$specialPageAliases['sr-ec'] = [
+	'UserGroups' => [ 'КорисничкеГрупе' ],
+];
 
 /** Serbian Latin (srpski (latinica)) */
-$specialPageAliases['sr-el'] = array(
-	'UserGroups' => array( 'KorisničkeGrupe' ),
-);
+$specialPageAliases['sr-el'] = [
+	'UserGroups' => [ 'KorisničkeGrupe' ],
+];
 
 /** Simplified Chinese (中文（简体）‎) */
-$specialPageAliases['zh-hans'] = array(
-	'UserGroups' => array( '用户组' ),
-);
+$specialPageAliases['zh-hans'] = [
+	'UserGroups' => [ '用户组' ],
+];
 
 /** Traditional Chinese (中文（繁體）‎) */
-$specialPageAliases['zh-hant'] = array(
-	'UserGroups' => array( '使用者群組' ),
-);
+$specialPageAliases['zh-hant'] = [
+	'UserGroups' => [ '使用者群組' ],
+];

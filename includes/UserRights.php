@@ -23,7 +23,7 @@
  * @ingroup User
  * @author Withoutaname
  * @link https://www.mediawiki.org/wiki/Manual:User_rights Documentation
- * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
+ * @license GPL-2.0-or-later
  */
 
 /**
@@ -35,7 +35,7 @@
  *
  * @ingroup User
  */
-class UserRight {
+class UserRights {
 	/**
 	 * Globals related to user rights
 	 * global $wgAvailableRights, $wgGroupPermissions, $wgNamespaceProtection,
@@ -50,9 +50,11 @@ class UserRight {
 	/**
 	 * Cached array of all user rights defined by core.
 	 * Each of these should have a corresponding message "right-$right".
+	 *
 	 * @showinitializer
+	 * @var array
 	 */
-	private static $mCoreRights = array(
+	private static $mCoreRights = [
 		'apihighlimits',
 		'autoconfirmed',
 		'autopatrol',
@@ -121,7 +123,7 @@ class UserRight {
 		'viewmyprivateinfo',
 		'viewmywatchlist',
 		'writeapi',
-	);
+	];
 
 	/**
 	 * @var string Name of this user right
@@ -139,7 +141,10 @@ class UserRight {
 	}
 
 	/**
-	 * Constructs a UserRight object given a string as its name.
+	 * Constructs a UserRights object given a string as its name.
+	 *
+	 * @param string $name
+	 * @throws MWException
 	 */
 	public function __construct( $name ) {
 		if ( !is_string( $name ) ) {
@@ -150,13 +155,14 @@ class UserRight {
 
 	/**
 	 * Given an array of UserGroup objects, associate this
-	 * UserRight with each of the user groups.
+	 * UserRights with each of the user groups.
 	 *
 	 * @param array $groups Array of UserGroup objects to
 	 * associate this right with
+	 * @param bool $revoke
 	 */
 	public function addToGroups( $groups, $revoke = false ) {
-		$groups = !is_array( $groups ) ? array( $groups ) : $groups;
+		$groups = !is_array( $groups ) ? [ $groups ] : $groups;
 		foreach ( $groups as $group ) {
 			if ( !( $group instanceof UserGroup ) ) {
 				$this->output( "Not a UserGroup object. Skipping $group..." );
@@ -201,7 +207,7 @@ class UserRight {
 	public function getAffectedNamespaces() {
 		global $wgNamespaceProtection;
 
-		$namespaces = array();
+		$namespaces = [];
 		foreach ( $wgNamespaceProtection as $mwnamespace => $rights ) {
 			if ( $mwnamespace ) {
 				if ( ( is_array( $rights ) && in_array( $this->name, $rights, true ) ) ||
@@ -237,8 +243,8 @@ class UserRight {
 	public function getGroups() {
 		global $wgGroupPermissions, $wgRevokePermissions;
 
-		$groups = array();
-		$groupnames = array();
+		$groups = [];
+		$groupnames = [];
 		foreach ( $wgGroupPermissions as $group => $rights ) {
 			if ( $rights ) {
 				foreach ( $rights as $right => $boolvalue ) {
@@ -282,7 +288,7 @@ class UserRight {
 	 * @return array An array of User objects
 	 */
 	public function getUsers() {
-		$users = array();
+		$users = [];
 		$groups = $this->getGroups();
 		foreach ( $groups as $group ) {
 			if ( $group->isImplicit() ) {
@@ -300,8 +306,7 @@ class UserRight {
 	 * Check to see if this user right is associated with a given
 	 * user group.
 	 *
-	 * @param UserGroup The UserGroup object to check
-	 *
+	 * @param UserGroup $group The UserGroup object to check
 	 * @return bool True if it is associated with the user group,
 	 * false otherwise
 	 */
@@ -327,13 +332,13 @@ class UserRight {
 	/**
 	 * Returns an array of all user rights objects from the database.
 	 *
-	 * @return array An array of available UserRight objects
+	 * @return array An array of available UserRights objects
 	 */
 	public static function getAllRights() {
 		global $wgAvailableRights, $wgGroupPermissions, $wgNamespaceProtection, $wgRevokePermissions;
 
-		$userrights = array();
-		$userrightsnames = array();
+		$userrights = [];
+		$userrightsnames = [];
 		foreach ( $wgAvailableRights as $right ) {
 			$userrightsnames[] = $right;
 		}
@@ -361,7 +366,7 @@ class UserRight {
 
 		$userrightsnames = array_unique( $userrightsnames );
 		foreach ( $userrightsnames as $rightsname ) {
-			$userrights[] = new UserRight( $rightsname );
+			$userrights[] = new UserRights( $rightsname );
 		}
 
 		asort( $userrights );
@@ -371,12 +376,12 @@ class UserRight {
 	/**
 	 * Returns an array of all user rights in core as objects.
 	 *
-	 * @return array An array of UserRight objects from core
+	 * @return array An array of UserRights objects from core
 	 */
 	public static function getCoreRights() {
-		$corerights = array();
+		$corerights = [];
 		foreach ( self::$mCoreRights as $rightsname ) {
-			$corerights[] = new UserRight( $rightsname );
+			$corerights[] = new UserRights( $rightsname );
 		}
 		asort( $corerights );
 		return $corerights;
@@ -385,7 +390,7 @@ class UserRight {
 	/**
 	 * Returns an array of all user rights not defined by core.
 	 *
-	 * @return array An array of UserRight objects not from core
+	 * @return array An array of UserRights objects not from core
 	 */
 	public static function getOtherRights() {
 		$otherrights = array_diff( self::getAllRights(), self::getCoreRights() );
@@ -397,13 +402,13 @@ class UserRight {
 	 * Returns an array of all user rights objects that were revoked.
 	 * Revoked user rights are defined in $wgRevokePermissions.
 	 *
-	 * @return array An array of UserRight objects that were revoked
+	 * @return array An array of UserRights objects that were revoked
 	 */
 	public static function getRevokedRights() {
 		global $wgRevokePermissions;
 
-		$revokerights = array();
-		$revokerightsnames = array();
+		$revokerights = [];
+		$revokerightsnames = [];
 		foreach ( $wgRevokePermissions as $group => $rights ) {
 			if ( $rights ) {
 				foreach ( $rights as $right => $boolvalue ) {
@@ -415,7 +420,7 @@ class UserRight {
 		}
 		$revokerightsnames = array_unique( $revokerightsnames );
 		foreach ( $revokerightsnames as $rightsname ) {
-			$revokerights[] = new UserRight( $rightsname );
+			$revokerights[] = new UserRights( $rightsname );
 		}
 		asort( $revokerights );
 		return $revokerights;

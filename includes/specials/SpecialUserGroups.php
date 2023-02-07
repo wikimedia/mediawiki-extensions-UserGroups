@@ -23,7 +23,7 @@
  * @ingroup SpecialPage
  * @author Withoutaname
  * @link https://www.mediawiki.org/wiki/Manual:User_rights Documentation
- * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
+ * @license GPL-2.0-or-later
  */
 
 /**
@@ -34,7 +34,7 @@ class SpecialUserGroups extends SpecialPage {
 	/**
 	 * @var array An array of all UserGroup objects.
 	 */
-	protected $allGroups = array();
+	protected $allGroups = [];
 	/**
 	 * @var User The user performing the action, provided by context.
 	 */
@@ -88,14 +88,14 @@ class SpecialUserGroups extends SpecialPage {
 	 * @param string $subtype The subtype of the change, could be one of
 	 * "create", "modify" or "delete"
 	 * @param UserGroup $usergroup The target user group
-	 * @param string $comment Additional comments for the log entry
+	 * @param string|null $comment Additional comments for the log entry
 	 * @param array $addrights The userrights added to the group
 	 * @param array $removerights The userrights removed from the group
 	 * @param bool $switched Whether this usergroup had been switched
 	 * between revoke and non-revoke group types
 	 */
 	public static function addLogEntry( User $user, $subtype, UserGroup $usergroup, $comment = null,
-		$addrights = array(), $removerights = array(), $switched = false ) {
+		$addrights = [], $removerights = [], $switched = false ) {
 		$logentry = new ManualLogEntry( 'usergroups', $subtype );
 		$logentry->setPerformer( $user );
 		$logentry->setTarget( parent::getTitleFor( 'UserGroups', $usergroup->getName() ) );
@@ -115,12 +115,12 @@ class SpecialUserGroups extends SpecialPage {
 				}
 			}
 		}
-		$logentry->setParameters( array(
+		$logentry->setParameters( [
 			'4::groupname' => $usergroup->getName(),
 			'5::addrights' => $addrights,
 			'6::removerights' => $removerights,
 			'7::switched' => $switched ?: '',
-		) );
+		] );
 		$logid = $logentry->insert();
 		$logentry->publish( $logid );
 	}
@@ -130,8 +130,6 @@ class SpecialUserGroups extends SpecialPage {
 	 * short message followed by a dropdown box for the user groups.
 	 */
 	protected function buildHeader() {
-		global $wgScript;
-		$grouplist = '';
 		$title = $this->getPageTitle()->getLocalURL();
 		$options = Xml::option( '', '' ) . "\n";
 		if ( $this->allGroups ) {
@@ -150,12 +148,12 @@ class SpecialUserGroups extends SpecialPage {
 			"\n" .
 			Xml::openElement(
 				'form',
-				array(
+				[
 					'method' => 'get',
 					'action' => $this->getPageTitle()->getLocalURL(),
 					'name' => 'selectgroup',
 					'id' => 'usergroups-header'
-				)
+				]
 			) .
 			Html::hidden( 'title', $this->getPageTitle()->getPrefixedText() ) .
 			"\n" .
@@ -166,7 +164,7 @@ class SpecialUserGroups extends SpecialPage {
 			) .
 			Xml::closeElement( 'p' ) .
 			"\n" .
-			Xml::openElement( 'select', array( 'name' => 'groupname', 'id' => 'groupname' ) ) .
+			Xml::openElement( 'select', [ 'name' => 'groupname', 'id' => 'groupname' ] ) .
 			"\n" .
 			$options .
 			"\n" .
@@ -182,7 +180,7 @@ class SpecialUserGroups extends SpecialPage {
 	 * @param string|null $subpage Subpage of this special page
 	 */
 	protected function buildMainForm( $subpage ) {
-		$groupnames = array();
+		$groupnames = [];
 		if ( $this->allGroups ) {
 			foreach ( $this->allGroups as $group ) {
 				$internalname = $group->getName();
@@ -196,12 +194,12 @@ class SpecialUserGroups extends SpecialPage {
 			$this->getOutput()->addHTML(
 				Xml::openElement(
 					'form',
-					array(
+					[
 						'method' => 'post',
 						'action' => $this->getPageTitle()->getLocalURL(),
 						'name' => 'modifygroup',
 						'id' => 'usergroups-body'
-					)
+					]
 				)
 			);
 			$deleteButton = '';
@@ -218,26 +216,27 @@ class SpecialUserGroups extends SpecialPage {
 						'newgroupname',
 						30,
 						null,
-						array( 'autofocus' => true, 'text-align' => 'right' )
+						[ 'autofocus' => true, 'text-align' => 'right' ]
 					)
 				);
 			} else {
-				$this->usergroup = ( $subpage === 'all' ) ? new UserGroup( '*', false ) : new UserGroup( $subpage, false );
+				$this->usergroup = ( $subpage === 'all' ) ?
+					new UserGroup( '*', false ) : new UserGroup( $subpage, false );
 				if ( !$this->usergroup->isImplicit() ) {
 					$deleteButton = Xml::check(
 						'wpUsergroupDelete',
 						false,
-						array( 'id' => 'wpUsergroupDelete' )
+						[ 'id' => 'wpUsergroupDelete' ]
 					) .
 					"&#160;" .
 					Html::rawElement(
 						'label',
-						array( 'for' => 'wpUsergroupDelete' ),
+						[ 'for' => 'wpUsergroupDelete' ],
 						$this->msg( 'usergroups-editgroup-delete' )
 					);
 				}
 			}
-			$allUserRights = UserRight::getAllRights();
+			$allUserRights = UserRights::getAllRights();
 			$checkboxes = "\n";
 			$index = 0;
 			$revoke = false;
@@ -255,16 +254,16 @@ class SpecialUserGroups extends SpecialPage {
 				$rightsname = $userright->getName();
 				$message = $this->msg( "right-$rightsname" );
 				$parentheses = $this->msg( "parentheses", $rightsname );
-				$checkboxes .= Html::rawElement( 'li', array( 'class' => 'mw-usergroups-editrights' ),
+				$checkboxes .= Html::rawElement( 'li', [ 'class' => 'mw-usergroups-editrights' ],
 				Xml::check(
 					"wpUserrightsEdit-$rightsname",
 					$checked,
-					array( 'id' => "wpUserrightsEdit-$rightsname" )
+					[ 'id' => "wpUserrightsEdit-$rightsname" ]
 				) .
 				"&#160;" .
 				Html::rawElement(
 					'label',
-					array( 'for' => "wpUserrightsEdit-$rightsname" ),
+					[ 'for' => "wpUserrightsEdit-$rightsname" ],
 					( !$message->isBlank() ? $message->text() : $rightsname ) .
 					' ' . Xml::tags( 'code', null, $parentheses )
 				) ) . "\n";
@@ -278,19 +277,19 @@ class SpecialUserGroups extends SpecialPage {
 					"<table><tbody><tr><td><ul>" .
 					$checkboxes .
 					"</ul></td></tr></tbody></table>",
-					array( 'class' => 'usergroups-editpermissions' )
+					[ 'class' => 'usergroups-editpermissions' ]
 				) .
 				Html::hidden( 'wpEditToken', $this->getUser()->getEditToken() ) .
 				Html::hidden( 'wpGroupPage', $subpage ) .
 				Xml::check(
 					'wpUserrightsRevoke',
 					$revoke,
-					array( 'id' => 'wpUserrightsRevoke' )
+					[ 'id' => 'wpUserrightsRevoke' ]
 				) .
 				"&#160;" .
 				Html::rawElement(
 					'label',
-					array( 'for' => 'wpUserrightsRevoke' ),
+					[ 'for' => 'wpUserrightsRevoke' ],
 					$this->msg( 'usergroups-editgroup-revoke' )
 				) .
 				Html::element( 'br' ) .
@@ -298,25 +297,25 @@ class SpecialUserGroups extends SpecialPage {
 				$deleteButton .
 				Html::element( 'br' ) .
 				"\n" .
-				Html::rawElement( 'td', array( 'class' => 'mw-label' ),
+				Html::rawElement( 'td', [ 'class' => 'mw-label' ],
 					Xml::label( $this->msg( 'usergroups-editgroup-reason' ), 'wpReason' )
 				) .
 				"&#160;" .
-				Html::rawElement( 'td', array( 'class' => 'mw-input' ),
+				Html::rawElement( 'td', [ 'class' => 'mw-input' ],
 					Xml::input(
 						'wpReason',
 						60,
 						'',
-						array( 'id' => 'wpReason', 'maxlength' => 255 )
+						[ 'id' => 'wpReason', 'maxlength' => 255 ]
 					)
 				) .
 				"\n" .
 				Html::element( 'br' ) .
 				"\n" .
-				Html::rawElement( 'td', array( 'class' => 'mw-submit' ),
+				Html::rawElement( 'td', [ 'class' => 'mw-submit' ],
 					Xml::submitButton(
 						$this->msg( 'usergroups-editgroup-save' ),
-						array( 'name' => 'savegroupchanges', 'style' => 'float:right' )
+						[ 'name' => 'savegroupchanges', 'style' => 'float:right' ]
 					)
 				)
 			);
@@ -349,7 +348,8 @@ class SpecialUserGroups extends SpecialPage {
 					throw new MWException( $this->msg( "usergroupnameexists-error" )->text() );
 				}
 			} else {
-				$this->usergroup = ( $groupid === 'all' ) ? new UserGroup( '*', false ) : new UserGroup( $groupid, false );
+				$this->usergroup = ( $groupid === 'all' ) ?
+					new UserGroup( '*', false ) : new UserGroup( $groupid, false );
 			}
 			if ( $this->usergroup ) {
 				$reason = $request->getVal( 'wpReason' ) ?: null;
@@ -364,14 +364,14 @@ class SpecialUserGroups extends SpecialPage {
 						$switched = true;
 					}
 					$oldrights = $this->usergroup->getUserRights();
-					$newrights = array();
-					$addrights = array();
-					$removerights = array();
-					$allUserrights = UserRight::getAllRights();
+					$newrights = [];
+					$addrights = [];
+					$removerights = [];
+					$allUserrights = UserRights::getAllRights();
 					foreach ( $allUserrights as $userright ) {
 						$rightsname = $userright->getName();
 						if ( $request->getCheck( "wpUserrightsEdit-$rightsname" ) ) {
-							$newrights[] = new UserRight( $rightsname );
+							$newrights[] = new UserRights( $rightsname );
 						}
 					}
 					if ( !( $oldrights == $newrights ) || $switched ) {
@@ -405,11 +405,12 @@ class SpecialUserGroups extends SpecialPage {
 					}
 				}
 			}
-			$successpage = $this->getPageTitle()->getFullURL( array( 'success' => 1 ) );
+			$successpage = $this->getPageTitle()->getFullURL( [ 'success' => 1 ] );
 			$this->getOutput()->redirect( $successpage );
 		}
 	}
 
+	/** @inheritDoc */
 	protected function getGroupName() {
 		return 'users';
 	}

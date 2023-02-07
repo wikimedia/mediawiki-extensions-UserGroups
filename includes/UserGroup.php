@@ -23,7 +23,7 @@
  * @ingroup User
  * @author Withoutaname
  * @link https://www.mediawiki.org/wiki/Manual:User_rights Documentation
- * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
+ * @license GPL-2.0-or-later
  */
 
 use MediaWiki\MediaWikiServices;
@@ -53,7 +53,7 @@ class UserGroup {
 	/**
 	 * @var array An array of users belonging to this user group.
 	 */
-	protected $members = array();
+	protected $members = [];
 	/**
 	 * @var string The internal name for this user group, as used within
 	 * MediaWiki itself.
@@ -73,7 +73,7 @@ class UserGroup {
 	/**
 	 * @var array An array of user rights associated with this user group.
 	 */
-	protected $userrights = array();
+	protected $userrights = [];
 
 	/**
 	 * Returns the internal string name representing this user group.
@@ -102,7 +102,7 @@ class UserGroup {
 		}
 		$this->clearInstanceCache();
 		if ( $localized ) {
-			$realname = function() use ( $name ) {
+			$realname = function () use ( $name ) {
 				$allGroups = self::listGroups();
 				foreach ( $allGroups as $group ) {
 					$internalname = $group->getName();
@@ -122,10 +122,10 @@ class UserGroup {
 			$this->nameInternal = $name;
 			$this->nameLocalized = !$message->isBlank() ? $message->text() : $name;
 		}
-		$this->loadFromDatabase( array( 'ug_group' => $this->nameInternal ) );
+		$this->loadFromDatabase( [ 'ug_group' => $this->nameInternal ] );
 		if ( $this->exists() ) {
-			$groupperms = array();
-			$revokeperms = array();
+			$groupperms = [];
+			$revokeperms = [];
 			foreach ( $wgGroupPermissions as $group => $rights ) {
 				if ( ( $group === $this->nameInternal ) && $rights ) {
 					foreach ( $rights as $right => $bool ) {
@@ -146,11 +146,11 @@ class UserGroup {
 			}
 			$rights = array_unique( array_merge( $groupperms, $revokeperms ) );
 			foreach ( $rights as $right ) {
-				$this->userrights[] = new UserRight( $right );
+				$this->userrights[] = new UserRights( $right );
 			}
 		}
 		if ( $this->dbrows ) {
-			$userids = array();
+			$userids = [];
 			foreach ( $this->dbrows as $row ) {
 				$userids[] = $row->ug_user;
 			}
@@ -165,7 +165,7 @@ class UserGroup {
 	/**
 	 * Add users as members of this user group.
 	 *
-	 * @param int|string|array|User $users An array of string usernames,
+	 * @param int|string|array|User $usernames An array of string usernames,
 	 * user ids or User objects for which to add members.
 	 * @throws MWException If this user group was an implicit group
 	 */
@@ -175,24 +175,24 @@ class UserGroup {
 		}
 		$usernames = (array)$usernames;
 
-		$this->loadFromDatabase( array( 'ug_group' => $this->nameInternal ), true );
+		$this->loadFromDatabase( [ 'ug_group' => $this->nameInternal ], true );
 		foreach ( $usernames as $username ) {
 			$user = is_int( $username ) ? User::newFromId( $username ) :
 					( is_string( $username ) ? User::newFromName( $username, 'valid' ) :
 					( ( $username instanceof User ) ? $username :
 					null ) );
 			if ( $user ) {
-				if ( Hooks::run( 'UserAddGroup', array( $user, &$this->nameInternal ) ) &&
+				if ( Hooks::run( 'UserAddGroup', [ $user, &$this->nameInternal ] ) &&
 					$this->dbrows && $user->getId() ) {
-					$dbw = wfGetDB( DB_MASTER );
+					$dbw = wfGetDB( DB_PRIMARY );
 					$dbw->insert(
-						array( 'user_groups' ),
-						array(
+						[ 'user_groups' ],
+						[
 							'ug_group' => $this->nameInternal,
 							'ug_user' => $user->getId(),
-						),
+						],
 						__METHOD__,
-						array( 'IGNORE' )
+						[ 'IGNORE' ]
 					);
 				}
 				$this->members[] = $user;
@@ -212,7 +212,7 @@ class UserGroup {
 	/**
 	 * Associate user rights with this user group.
 	 *
-	 * @param string|array|UserRight $rights An array of the user rights
+	 * @param string|array|UserRights $rights An array of the user rights
 	 * to associate with this user group
 	 */
 	public function addUserRights( $rights ) {
@@ -221,7 +221,7 @@ class UserGroup {
 			if ( !$userright ) {
 				continue;
 			}
-			$userright = !( $userright instanceof UserRight ) ? new UserRight( $userright ) : $userright;
+			$userright = !( $userright instanceof UserRights ) ? new UserRights( $userright ) : $userright;
 			if ( !$userright->exists() || $this->hasUserRight( $userright ) ) {
 				continue;
 			}
@@ -254,11 +254,11 @@ class UserGroup {
 	 */
 	private function clearInstanceCache() {
 		$this->dbrows = null;
-		$this->members = array();
+		$this->members = [];
 		$this->nameInternal = null;
 		$this->nameLocalized = null;
 		$this->revoke = null;
-		$this->userrights = array();
+		$this->userrights = [];
 	}
 
 	/**
@@ -280,12 +280,12 @@ class UserGroup {
 			$this->removeMembers( $this->members );
 		}
 		//
-		$this->loadFromDatabase( array( 'ug_group' => $this->nameInternal ), true );
+		$this->loadFromDatabase( [ 'ug_group' => $this->nameInternal ], true );
 		if ( $this->dbrows ) {
-			$dbw = wfGetDB( DB_MASTER );
+			$dbw = wfGetDB( DB_PRIMARY );
 			$dbw->delete(
 				'user_groups',
-				array( 'ug_group' => $this->nameInternal ),
+				[ 'ug_group' => $this->nameInternal ],
 				__METHOD__
 			);
 			foreach ( $this->dbrows as $row ) {
@@ -332,12 +332,12 @@ class UserGroup {
 			}
 			if ( $this->members ) {
 				foreach ( $this->members as $member ) {
-					$dbw = wfGetDB( DB_MASTER );
+					$dbw = wfGetDB( DB_PRIMARY );
 					$dbw->insert(
 						'user_groups',
-						array( 'ug_group' => $this->nameInternal, 'ug_user' => $member->getId() ),
+						[ 'ug_group' => $this->nameInternal, 'ug_user' => $member->getId() ],
 						__METHOD__,
-						array( 'IGNORE' )
+						[ 'IGNORE' ]
 					);
 					$member->invalidateCache();
 				}
@@ -356,11 +356,11 @@ class UserGroup {
 		if ( $clear ) {
 			$this->dbrows = null;
 		}
-		if ( is_null( $this->dbrows ) ) {
-			$dbr = wfGetDB( DB_MASTER );
+		if ( $this->dbrows === null ) {
+			$dbr = wfGetDB( DB_PRIMARY );
 			$rows = $dbr->select(
-				array( 'user_groups' ),
-				array( '*' ),
+				[ 'user_groups' ],
+				[ '*' ],
 				$conds,
 				__METHOD__
 			);
@@ -373,7 +373,7 @@ class UserGroup {
 	/**
 	 * Remove User objects from this user group through the database.
 	 *
-	 * @param int|string|array|User $users An array of string usernames,
+	 * @param int|string|array|User $usernames An array of string usernames,
 	 * user ids or User objects from which to remove members
 	 * @throws MWException If this user group was an implicit group
 	 */
@@ -383,7 +383,7 @@ class UserGroup {
 		}
 		$usernames = (array)$usernames;
 
-		$this->loadFromDatabase( array( 'ug_group' => $this->nameInternal ), true );
+		$this->loadFromDatabase( [ 'ug_group' => $this->nameInternal ], true );
 		foreach ( $usernames as $username ) {
 			$user = is_int( $username ) ? User::newFromId( $username ) :
 					( is_string( $username ) ? User::newFromName( $username, 'valid' ) :
@@ -391,23 +391,23 @@ class UserGroup {
 					null ) );
 			if ( $user ) {
 				$user->load();
-				if ( Hooks::run( 'UserRemoveGroup', array( $user, &$this->nameInternal ) ) &&
+				if ( Hooks::run( 'UserRemoveGroup', [ $user, &$this->nameInternal ] ) &&
 					$this->dbrows && $user->getId() ) {
-					$dbw = wfGetDB( DB_MASTER );
+					$dbw = wfGetDB( DB_PRIMARY );
 					$dbw->delete(
-						array( 'user_groups' ),
-						array(
+						[ 'user_groups' ],
+						[
 							'ug_group' => $this->nameInternal,
 							'ug_user' => $user->getId(),
-						),
+						],
 						__METHOD__
 					);
 				}
-				$this->members = array_diff( $this->members, array( $user ) );
+				$this->members = array_diff( $this->members, [ $user ] );
 
 				// Refreshing the cache for this User object
 				$user->loadGroups();
-				$user->mGroups = array_diff( $user->mGroups, array( $this->nameInternal ) );
+				$user->mGroups = array_diff( $user->mGroups, [ $this->nameInternal ] );
 				$user->getEffectiveGroups( true );
 				$user->mRights = null;
 				$user->invalidateCache();
@@ -418,7 +418,7 @@ class UserGroup {
 	/**
 	 * Remove user right associations from this user group.
 	 *
-	 * @param string|array|UserRight $rights An array of the user rights
+	 * @param string|array|UserRights $rights An array of the user rights
 	 * to disassociate from this user group
 	 */
 	public function removeUserRights( $rights ) {
@@ -427,7 +427,7 @@ class UserGroup {
 			if ( !$userright ) {
 				continue;
 			}
-			$userright = !( $userright instanceof UserRight ) ? new UserRight( $userright ) : $userright;
+			$userright = !( $userright instanceof UserRights ) ? new UserRights( $userright ) : $userright;
 			if ( !$userright->exists() || !$this->hasUserRight( $userright ) ) {
 				continue;
 			}
@@ -517,12 +517,12 @@ class UserGroup {
 	public function changeableByGroups() {
 		global $wgAddGroups, $wgRemoveGroups, $wgGroupsAddToSelf, $wgGroupsRemoveFromSelf;
 
-		$bygroups = array(
-			'add' => array(),
-			'remove' => array(),
-			'add-self' => array(),
-			'remove-self' => array()
-		);
+		$bygroups = [
+			'add' => [],
+			'remove' => [],
+			'add-self' => [],
+			'remove-self' => []
+		];
 		$allGroups = self::listGroups();
 		foreach ( $allGroups as $group ) {
 			$internalname = $group->getName();
@@ -558,12 +558,12 @@ class UserGroup {
 	public function changeableGroups() {
 		global $wgAddGroups, $wgRemoveGroups, $wgGroupsAddToSelf, $wgGroupsRemoveFromSelf;
 
-		$togroups = array(
-			'add' => array(),
-			'remove' => array(),
-			'add-self' => array(),
-			'remove-self' => array()
-		);
+		$togroups = [
+			'add' => [],
+			'remove' => [],
+			'add-self' => [],
+			'remove-self' => []
+		];
 		$explicitGroups = self::listExplicitGroups();
 		$addgroups = isset( $wgAddGroups[$this->nameInternal] ) ?
 					$wgAddGroups[$this->nameInternal] : null;
@@ -618,7 +618,7 @@ class UserGroup {
 		global $wgAddGroups, $wgAutopromote, $wgGroupPermissions, $wgGroupsAddToSelf,
 		$wgGroupsRemoveFromSelf, $wgImplicitGroups, $wgRemoveGroups, $wgRevokePermissions;
 
-		$this->loadFromDatabase( array( 'ug_group' => $this->nameInternal ), true );
+		$this->loadFromDatabase( [ 'ug_group' => $this->nameInternal ], true );
 		if ( $this->dbrows ) {
 			return true;
 		}
@@ -721,11 +721,11 @@ class UserGroup {
 	/**
 	 * Checks if the given user right is associated with this user group.
 	 *
-	 * @param UserRight $userright A UserRight object to check
+	 * @param UserRights $userright A UserRights object to check
 	 * @return bool True if the given userright is associated with this group,
 	 * false otherwise
 	 */
-	public function hasUserRight( UserRight $userright ) {
+	public function hasUserRight( UserRights $userright ) {
 		return in_array( $userright, $this->userrights );
 	}
 
@@ -779,6 +779,7 @@ class UserGroup {
 	public static function listExplicitGroups() {
 		$allGroups = self::listGroups();
 		$implicitGroups = self::listImplicitGroups();
+		// phpcs:ignore Squiz.Scope.StaticThisUsage.Found
 		$this->dbrows = null;
 		return array_diff( $allGroups, $implicitGroups );
 	}
@@ -792,11 +793,11 @@ class UserGroup {
 		global $wgAddGroups, $wgAutopromote, $wgGroupPermissions, $wgGroupsAddToSelf,
 		$wgGroupsRemoveFromSelf, $wgImplicitGroups, $wgRemoveGroups, $wgRevokePermissions;
 
-		$dbgroups = array();
-		$dbr = wfGetDB( DB_MASTER );
+		$dbgroups = [];
+		$dbr = wfGetDB( DB_PRIMARY );
 		$res = $dbr->select(
-			array( 'user_groups' ),
-			array( '*' ),
+			[ 'user_groups' ],
+			[ '*' ],
 			null,
 			__METHOD__
 		);
@@ -804,7 +805,7 @@ class UserGroup {
 			$dbgroups[] = $row->ug_group;
 		}
 
-		$defsettingsgroups = array();
+		$defsettingsgroups = [];
 		foreach ( $wgAddGroups as $performer => $targets ) {
 			$defsettingsgroups[] = $performer;
 			foreach ( $targets as $target ) {
@@ -855,11 +856,11 @@ class UserGroup {
 	public static function listGroupsAndRights() {
 		global $wgGroupPermissions, $wgRevokePermissions;
 
-		$allGroupsAndRights = array();
-		$othergroups = array();
-		$otheruserrights = array();
+		$allGroupsAndRights = [];
+		$othergroups = [];
+		$otheruserrights = [];
 		$allGroups = self::listGroups();
-		$allUserRights = UserRight::getAllRights();
+		$allUserRights = UserRights::getAllRights();
 		foreach ( $allGroups as $group ) {
 			$othergroups[] = $group->getName();
 		}
@@ -907,7 +908,7 @@ class UserGroup {
 	public static function listImplicitGroups() {
 		global $wgImplicitGroups;
 
-		$implicitGroups = array();
+		$implicitGroups = [];
 		foreach ( $wgImplicitGroups as $group ) {
 			$implicitGroups[] = new UserGroup( $group, false );
 		}
@@ -922,7 +923,7 @@ class UserGroup {
 	public static function listRevokeGroups() {
 		global $wgRevokePermissions;
 
-		$revokeGroups = array();
+		$revokeGroups = [];
 		foreach ( $wgRevokePermissions as $group => $rights ) {
 			$revokeGroups[] = new UserGroup( $group, false );
 		}

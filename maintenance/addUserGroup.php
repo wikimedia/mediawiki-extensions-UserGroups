@@ -22,7 +22,7 @@
  * @file
  * @ingroup Maintenance
  * @author Withoutaname
- * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
+ * @license GPL-2.0-or-later
  */
 
 require_once __DIR__ . '/Maintenance.php';
@@ -84,9 +84,9 @@ class AddUserGroup extends Maintenance {
 			}
 			$rightsnames = explode( ',', $this->getOption( 'todb' ) );
 			$this->output( "Creating new user group \"$groupname\".\n" );
-			$addrights = array();
+			$addrights = [];
 			foreach ( $rightsnames as $rightsname ) {
-				$userright = new UserRight( $rightsname );
+				$userright = new UserRights( $rightsname );
 				if ( !$userright->exists() ) {
 					$this->error( "Error: Userright \"$rightsname\" does not exist, skipping...\n" );
 				} else {
@@ -125,6 +125,7 @@ class AddUserGroup extends Maintenance {
 					}
 					if ( !in_array( $groupname, $changeableGroups['add-self'], true ) &&
 						$username == $performer->getName() ) {
+						// phpcs:ignore Generic.Files.LineLength.TooLong
 						$this->error( "You do not have permission to add group \"$groupname\" to yourself, skipping..." );
 						continue;
 					}
@@ -142,10 +143,10 @@ class AddUserGroup extends Maintenance {
 						$logEntry->setPerformer( $performer );
 						$logEntry->setTarget( $user->getUserPage() );
 						$logEntry->setComment( $comment );
-						$logEntry->setParameters( array(
+						$logEntry->setParameters( [
 							'4::oldgroups' => $oldGroups,
 							'5::newgroups' => $newGroups,
-						) );
+						] );
 						$logid = $logEntry->insert();
 						$logEntry->publish( $logid );
 					}
