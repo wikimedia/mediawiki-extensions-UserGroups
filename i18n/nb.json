@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Jon Harald Søby"
+			"Jon Harald Søby",
+			"EdoAug"
 		]
 	},
 	"usergroups": "Brukergruppebehandling",
@@ -9,7 +10,7 @@
 	"usergroupnameexists-error": "Du kan ikke opprette en ny brukergruppe med dette navnet fordi det allerede fins.",
 	"usergroups-createnew": "(opprett ny …)",
 	"usergroups-editgroup-delete": "Slett denne brukergruppa <span class=\"important\" style=\"color:red;\">(<strong>Advarsel</strong>: Dette kan ikke gjøres om. For å gjenopprette denne kassen må du [[Special:UserGroups/new|lage en ny]].)</span>",
-	"usergroups-editgroup-desc": "Velg ei brukergruppe fra nedrekksmenyen nedenfor, eller opprett din egen med valget «oppret ny …».",
+	"usergroups-editgroup-desc": "Velg ei brukergruppe fra nedtrekksmenyen nedenfor, eller opprett din egen med valget «opprett ny …».",
 	"usergroups-editgroup-newgroup": "Skriv inn navnet på den nye brukergruppa:",
 	"usergroups-editgroup-reason": "Årsak:",
 	"usergroups-editgroup-revoke": "Sett denne brukergruppa til å fjerne i stedet for å gi tillatelser",
