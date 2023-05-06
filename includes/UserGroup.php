@@ -176,13 +176,14 @@ class UserGroup {
 		$usernames = (array)$usernames;
 
 		$this->loadFromDatabase( [ 'ug_group' => $this->nameInternal ], true );
+		$hookContainer = MediaWikiServices::getInstance()->getHookContainer();
 		foreach ( $usernames as $username ) {
 			$user = is_int( $username ) ? User::newFromId( $username ) :
 					( is_string( $username ) ? User::newFromName( $username, 'valid' ) :
 					( ( $username instanceof User ) ? $username :
 					null ) );
 			if ( $user ) {
-				if ( Hooks::run( 'UserAddGroup', [ $user, &$this->nameInternal ] ) &&
+				if ( $hookContainer->run( 'UserAddGroup', [ $user, &$this->nameInternal ] ) &&
 					$this->dbrows && $user->getId() ) {
 					$dbw = wfGetDB( DB_PRIMARY );
 					$dbw->insert(
@@ -384,6 +385,7 @@ class UserGroup {
 		$usernames = (array)$usernames;
 
 		$this->loadFromDatabase( [ 'ug_group' => $this->nameInternal ], true );
+		$hookContainer = MediaWikiServices::getInstance()->getHookContainer();
 		foreach ( $usernames as $username ) {
 			$user = is_int( $username ) ? User::newFromId( $username ) :
 					( is_string( $username ) ? User::newFromName( $username, 'valid' ) :
@@ -391,7 +393,7 @@ class UserGroup {
 					null ) );
 			if ( $user ) {
 				$user->load();
-				if ( Hooks::run( 'UserRemoveGroup', [ $user, &$this->nameInternal ] ) &&
+				if ( $hookContainer->run( 'UserRemoveGroup', [ $user, &$this->nameInternal ] ) &&
 					$this->dbrows && $user->getId() ) {
 					$dbw = wfGetDB( DB_PRIMARY );
 					$dbw->delete(
