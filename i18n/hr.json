@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Bugoslav"
+			"Bugoslav",
+			"Ponor"
 		]
 	},
 	"usergroups": "Upravljanje suradničkim skupinama",
@@ -10,7 +11,7 @@
 	"usergroups-createnew": "(stvori novu…)",
 	"usergroups-editgroup-delete": "Izbriši ovu suradničku skupinu <span class=\"important\" style=\"color:red\">(<strong>Upozorenje</strong>: Ova je radnja nepovratna. Da biste ponovo stvorili ovaj razred, morate [[Special:UserGroups/new|načiniti novi]].)</span>",
 	"usergroups-editgroup-desc": "Izaberite suradničku skupinu s nižega padajućeg izbornika ili stvorite novu uz pomoć mogućnosti »stvori novu...«.",
-	"usergroups-editgroup-newgroup": "Upišite Vaš naziv nove suradničke skupine:",
+	"usergroups-editgroup-newgroup": "Upišite naziv nove suradničke skupine:",
 	"usergroups-editgroup-reason": "Osnova:",
 	"usergroups-editgroup-revoke": "Postavi ovu suradničku skupinu na način da umjesto dodjeljivanja prava oduzima ista.",
 	"usergroups-editgroup-save": "Spremi promjene",
