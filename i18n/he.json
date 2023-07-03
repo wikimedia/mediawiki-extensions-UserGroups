@@ -6,11 +6,24 @@
 			"Amire80"
 		]
 	},
+	"usergroups": "ניהול קבוצות משתמשים",
 	"usergroups-desc": "אפשרות לעשות בקרה מדויקת יותר על אילו הרשאות משתמש אפשר לתת לאילו קבוצות משתמשים",
+	"usergroupnameexists-error": "לא ניתן ליצור קבוצת משתמשים חדשה בשם הזה מכיוון שהיא כבר קיימת.",
+	"usergroups-createnew": "(ליצור חדשה...)",
+	"usergroups-editgroup-delete": "מחק קבוצת המשתמשים הסאת <span class=\"important\" style=\"color:red\">( <strong>אזהרה</strong>: זה בלתי־הפיך. כדי ליצור מחדש את המחלקה הזאת, יש [[Special:UserGroups/new|ליצור קבוצה חדשה]].)</span>",
+	"usergroups-editgroup-desc": "נא לבחור קבוצת משתמשים מהתפריט הנפתח למטה, או ליצור קבוצת משתמשים משלך עם האפשרות \"ליצור חדשה...\".",
+	"usergroups-editgroup-newgroup": "נא להזין את השם של קבוצת המשתמשים החדשה שלך:",
 	"usergroups-editgroup-reason": "סיבה:",
+	"usergroups-editgroup-revoke": "להגדיר את קבוצת המשתמשים הזאת באופן שישלול הרשאות במקום להעניק אותן",
 	"usergroups-editgroup-save": "שמירת השינויים",
+	"usergroups-editgroup-userrights": "כל ההרשאות הזמינות",
+	"usergroups-log-name": "יומן קבוצות משתמשים",
+	"usergroups-log-header": "היומן הזה מתעד שינויים בהרשאות המשתמש של כל קבוצת משתמשים.",
+	"usergroups-log-none": "(אין)",
 	"action-modifygroups": "לשנות קבוצות משתמשים",
+	"invalidusergroupname-title": "שם קבוצת משתמשים לא תקין",
 	"invalidusergroupname-error": "השם שהזנת עבור קבוצת משתמשים חדשה אינו תקין.\n\n[[Special:UserGroups|חזרה]].",
 	"nosuchusergroup": "אין קבוצת משתמשים שנקראת \"$1\". אולי רצית [[Special:UserGroups/new|ליצור]] את קבוצת משתמשים החדשה הזאת?",
-	"right-modifygroups": "יצירה, שינוי ומחיקה של קבוצות משתמשים"
+	"right-modifygroups": "יצירה, שינוי ומחיקה של קבוצות משתמשים",
+	"logentry-usergroups-delete": "$1 {{GENDER:$2|מחק|מחקה}} את קבוצת המשתמשים \"$4\"."
 }
