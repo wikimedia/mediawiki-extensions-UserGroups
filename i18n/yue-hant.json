@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Winston Sung"
+		]
+	},
+	"usergroups-createnew": "（建立新嘅……）",
+	"usergroups-editgroup-newgroup": "唔該輸入你嘅新用戶姐嘅名：",
+	"usergroups-editgroup-reason": "原因:",
+	"usergroups-log-none": "(冇)",
+	"logentry-usergroups-delete": "$1剷咗用戶姐「$4」。"
+}
