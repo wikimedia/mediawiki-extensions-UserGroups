@@ -159,7 +159,7 @@ class UserGroup {
 				$this->members[] = User::newFromId( $userid );
 			}
 		}
-		$this->revoke = in_array( $this->nameInternal, array_keys( $wgRevokePermissions ), true );
+		$this->revoke = array_key_exists( $this->nameInternal, $wgRevokePermissions );
 	}
 
 	/**
@@ -624,14 +624,14 @@ class UserGroup {
 		if ( $this->dbrows ) {
 			return true;
 		}
-		if ( in_array( $this->nameInternal, array_keys( $wgAddGroups ), true ) ||
-			in_array( $this->nameInternal, array_keys( $wgAutopromote ), true ) ||
-			in_array( $this->nameInternal, array_keys( $wgGroupPermissions ), true ) ||
-			in_array( $this->nameInternal, array_keys( $wgGroupsAddToSelf ), true ) ||
-			in_array( $this->nameInternal, array_keys( $wgGroupsRemoveFromSelf ), true ) ||
+		if ( array_key_exists( $this->nameInternal, $wgAddGroups ) ||
+			array_key_exists( $this->nameInternal, $wgAutopromote ) ||
+			array_key_exists( $this->nameInternal, $wgGroupPermissions ) ||
+			array_key_exists( $this->nameInternal, $wgGroupsAddToSelf ) ||
+			array_key_exists( $this->nameInternal, $wgGroupsRemoveFromSelf ) ||
 			in_array( $this->nameInternal, $wgImplicitGroups, true ) ||
-			in_array( $this->nameInternal, array_keys( $wgRemoveGroups ), true ) ||
-			in_array( $this->nameInternal, array_keys( $wgRevokePermissions ), true ) ) {
+			array_key_exists( $this->nameInternal, $wgRemoveGroups ) ||
+			array_key_exists( $this->nameInternal, $wgRevokePermissions ) ) {
 			return true;
 		}
 		return false;
