@@ -24,5 +24,5 @@
 	"invalidusergroupname-error": "Ime, ki ste ga vnesli za svojo novo uporabniško skupino, ni veljavno.\n\n[[Special:UserGroups|Nazaj]].",
 	"nosuchusergroup": "Ni bilo najdene uporabniške skupine z imenom »$1«. Ste morda želeli [[Special:UserGroups/new|ustvariti]] to novo uporabniško skupino?",
 	"right-modifygroups": "Ustvarjanje, spreminjanje in brisanje uporabniških skupin",
-	"logentry-usergroups-delete": "$1 je {{GENDER:$2|izbrisal|izbrisala|izbrisal/a}} uporabniško skupino »$4«"
+	"logentry-usergroups-delete": "$1 je {{GENDER:$2|izbrisal|izbrisala|izbrisal_a}} uporabniško skupino »$4«"
 }
