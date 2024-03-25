@@ -10,7 +10,7 @@
 	"usergroups-desc": "אפשרות לעשות בקרה מדויקת יותר על אילו הרשאות משתמש אפשר לתת לאילו קבוצות משתמשים",
 	"usergroupnameexists-error": "לא ניתן ליצור קבוצת משתמשים חדשה בשם הזה מכיוון שהיא כבר קיימת.",
 	"usergroups-createnew": "(ליצור חדשה...)",
-	"usergroups-editgroup-delete": "מחק קבוצת המשתמשים הסאת <span class=\"important\" style=\"color:red\">( <strong>אזהרה</strong>: זה בלתי־הפיך. כדי ליצור מחדש את המחלקה הזאת, יש [[Special:UserGroups/new|ליצור קבוצה חדשה]].)</span>",
+	"usergroups-editgroup-delete": "למחוק את קבוצת המשתמשים הזאת <span class=\"important\" style=\"color:red\">(<strong>אזהרה</strong>: זה בלתי־הפיך. כדי ליצור מחדש את המחלקה הזאת, יש [[Special:UserGroups/new|ליצור קבוצה חדשה]].)</span>",
 	"usergroups-editgroup-desc": "נא לבחור קבוצת משתמשים מהתפריט הנפתח למטה, או ליצור קבוצת משתמשים משלך עם האפשרות \"ליצור חדשה...\".",
 	"usergroups-editgroup-newgroup": "נא להזין את השם של קבוצת המשתמשים החדשה שלך:",
 	"usergroups-editgroup-reason": "סיבה:",
