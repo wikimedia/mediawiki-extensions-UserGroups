@@ -148,7 +148,7 @@ class SpecialUserGroups extends SpecialPage {
 			'
 			' .
 			"\n" .
-			Xml::openElement(
+			Html::openElement(
 				'form',
 				[
 					'method' => 'get',
@@ -159,19 +159,15 @@ class SpecialUserGroups extends SpecialPage {
 			) .
 			Html::hidden( 'title', $this->getPageTitle()->getPrefixedText() ) .
 			"\n" .
-			Xml::openElement( 'p' ) .
-			Xml::span(
-				$this->msg( 'usergroups-editgroup-desc' ),
-				'usergroups-header-text'
+			Html::rawElement( 'p', [],
+				Html::element( 'span', [ 'class' => 'usergroups-header-text' ],
+					$this->msg( 'usergroups-editgroup-desc' )->text()
+				)
 			) .
-			Xml::closeElement( 'p' ) .
 			"\n" .
-			Xml::openElement( 'select', [ 'name' => 'groupname', 'id' => 'groupname' ] ) .
-			"\n" .
-			$options .
-			"\n" .
-			Xml::closeElement( 'select' ) .
-			Xml::closeElement( 'form' ) .
+			Html::rawElement( 'select', [ 'name' => 'groupname', 'id' => 'groupname' ],
+				$options ) .
+			Html::closeElement( 'form' ) .
 			"\n"
 		);
 	}
@@ -194,7 +190,7 @@ class SpecialUserGroups extends SpecialPage {
 			$this->getOutput()->addWikiTextAsInterface( $status->getWikiText() );
 		} else {
 			$this->getOutput()->addHTML(
-				Xml::openElement(
+				Html::openElement(
 					'form',
 					[
 						'method' => 'post',
@@ -225,7 +221,7 @@ class SpecialUserGroups extends SpecialPage {
 				$this->usergroup = ( $subpage === 'all' ) ?
 					new UserGroup( '*', false ) : new UserGroup( $subpage, false );
 				if ( !$this->usergroup->isImplicit() ) {
-					$deleteButton = Xml::check(
+					$deleteButton = Html::check(
 						'wpUsergroupDelete',
 						false,
 						[ 'id' => 'wpUsergroupDelete' ]
@@ -257,7 +253,7 @@ class SpecialUserGroups extends SpecialPage {
 				$message = $this->msg( "right-$rightsname" );
 				$parentheses = $this->msg( "parentheses", $rightsname );
 				$checkboxes .= Html::rawElement( 'li', [ 'class' => 'mw-usergroups-editrights' ],
-				Xml::check(
+				Html::check(
 					"wpUserrightsEdit-$rightsname",
 					$checked,
 					[ 'id' => "wpUserrightsEdit-$rightsname" ]
@@ -267,7 +263,7 @@ class SpecialUserGroups extends SpecialPage {
 					'label',
 					[ 'for' => "wpUserrightsEdit-$rightsname" ],
 					( !$message->isBlank() ? $message->text() : $rightsname ) .
-					' ' . Xml::tags( 'code', null, $parentheses )
+					' ' . Html::rawElement( 'code', [], $parentheses )
 				) ) . "\n";
 				if ( ceil( count( $allUserRights ) / 2 ) == $index ) {
 					$checkboxes .= "</ul></td><td><ul>" . "\n";
@@ -283,16 +279,15 @@ class SpecialUserGroups extends SpecialPage {
 				) .
 				Html::hidden( 'wpEditToken', $this->getUser()->getEditToken() ) .
 				Html::hidden( 'wpGroupPage', $subpage ) .
-				Xml::check(
+				Html::check(
 					'wpUserrightsRevoke',
 					$revoke,
 					[ 'id' => 'wpUserrightsRevoke' ]
 				) .
 				"&#160;" .
-				Html::rawElement(
-					'label',
-					[ 'for' => 'wpUserrightsRevoke' ],
-					$this->msg( 'usergroups-editgroup-revoke' )
+				Html::label(
+					$this->msg( 'usergroups-editgroup-revoke' )->text(),
+					'wpUserrightsRevoke'
 				) .
 				Html::element( 'br' ) .
 				"\n" .
@@ -300,28 +295,28 @@ class SpecialUserGroups extends SpecialPage {
 				Html::element( 'br' ) .
 				"\n" .
 				Html::rawElement( 'td', [ 'class' => 'mw-label' ],
-					Xml::label( $this->msg( 'usergroups-editgroup-reason' ), 'wpReason' )
+					Html::label( $this->msg( 'usergroups-editgroup-reason' ), 'wpReason' )
 				) .
 				"&#160;" .
 				Html::rawElement( 'td', [ 'class' => 'mw-input' ],
-					Xml::input(
+					Html::input(
 						'wpReason',
-						60,
 						'',
-						[ 'id' => 'wpReason', 'maxlength' => 255 ]
+						'text',
+						[ 'id' => 'wpReason', 'size' => 60, 'maxlength' => 255 ]
 					)
 				) .
 				"\n" .
 				Html::element( 'br' ) .
 				"\n" .
 				Html::rawElement( 'td', [ 'class' => 'mw-submit' ],
-					Xml::submitButton(
+					Html::submitButton(
 						$this->msg( 'usergroups-editgroup-save' ),
 						[ 'name' => 'savegroupchanges', 'style' => 'float:right' ]
 					)
 				)
 			);
-			$this->getOutput()->addHTML( Xml::closeElement( 'form' ) );
+			$this->getOutput()->addHTML( Html::closeElement( 'form' ) );
 		}
 	}
 
