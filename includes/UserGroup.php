@@ -176,7 +176,9 @@ class UserGroup {
 		$usernames = (array)$usernames;
 
 		$this->loadFromDatabase( [ 'ug_group' => $this->nameInternal ], true );
-		$hookContainer = MediaWikiServices::getInstance()->getHookContainer();
+		$services = MediaWikiServices::getInstance();
+		$hookContainer = $services->getHookContainer();
+		$dbw = $services->getConnectionProvider()->getPrimaryDatabase();
 		foreach ( $usernames as $username ) {
 			$user = is_int( $username ) ? User::newFromId( $username ) :
 					( is_string( $username ) ? User::newFromName( $username, 'valid' ) :
@@ -185,7 +187,6 @@ class UserGroup {
 			if ( $user ) {
 				if ( $hookContainer->run( 'UserAddGroup', [ $user, &$this->nameInternal ] ) &&
 					$this->dbrows && $user->getId() ) {
-					$dbw = wfGetDB( DB_PRIMARY );
 					$dbw->insert(
 						[ 'user_groups' ],
 						[
@@ -283,7 +284,7 @@ class UserGroup {
 		//
 		$this->loadFromDatabase( [ 'ug_group' => $this->nameInternal ], true );
 		if ( $this->dbrows ) {
-			$dbw = wfGetDB( DB_PRIMARY );
+			$dbw = MediaWikiServices::getInstance()->getConnectionProvider()->getPrimaryDatabase();
 			$dbw->delete(
 				'user_groups',
 				[ 'ug_group' => $this->nameInternal ],
@@ -333,7 +334,7 @@ class UserGroup {
 			}
 			if ( $this->members ) {
 				foreach ( $this->members as $member ) {
-					$dbw = wfGetDB( DB_PRIMARY );
+					$dbw = MediaWikiServices::getInstance()->getConnectionProvider()->getPrimaryDatabase();
 					$dbw->insert(
 						'user_groups',
 						[ 'ug_group' => $this->nameInternal, 'ug_user' => $member->getId() ],
@@ -358,7 +359,7 @@ class UserGroup {
 			$this->dbrows = null;
 		}
 		if ( $this->dbrows === null ) {
-			$dbr = wfGetDB( DB_PRIMARY );
+			$dbr = MediaWikiServices::getInstance()->getConnectionProvider()->getReplicaDatabase();
 			$rows = $dbr->select(
 				[ 'user_groups' ],
 				[ '*' ],
@@ -385,7 +386,9 @@ class UserGroup {
 		$usernames = (array)$usernames;
 
 		$this->loadFromDatabase( [ 'ug_group' => $this->nameInternal ], true );
-		$hookContainer = MediaWikiServices::getInstance()->getHookContainer();
+		$services = MediaWikiServices::getInstance();
+		$hookContainer = $services->getHookContainer();
+		$dbw = $services->getConnectionProvider()->getPrimaryDatabase();
 		foreach ( $usernames as $username ) {
 			$user = is_int( $username ) ? User::newFromId( $username ) :
 					( is_string( $username ) ? User::newFromName( $username, 'valid' ) :
@@ -395,7 +398,6 @@ class UserGroup {
 				$user->load();
 				if ( $hookContainer->run( 'UserRemoveGroup', [ $user, &$this->nameInternal ] ) &&
 					$this->dbrows && $user->getId() ) {
-					$dbw = wfGetDB( DB_PRIMARY );
 					$dbw->delete(
 						[ 'user_groups' ],
 						[
@@ -796,7 +798,7 @@ class UserGroup {
 		$wgGroupsRemoveFromSelf, $wgImplicitGroups, $wgRemoveGroups, $wgRevokePermissions;
 
 		$dbgroups = [];
-		$dbr = wfGetDB( DB_PRIMARY );
+		$dbr = MediaWikiServices::getInstance()->getConnectionProvider()->getReplicaDatabase();
 		$res = $dbr->select(
 			[ 'user_groups' ],
 			[ '*' ],
