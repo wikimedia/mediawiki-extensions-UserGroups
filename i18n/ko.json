@@ -4,11 +4,12 @@
 			"Kwj2772",
 			"Ykhwong",
 			"아라",
-			"Dr1t jg"
+			"Dr1t jg",
+			"Suleiman the Magnificent Television"
 		]
 	},
 	"usergroups": "사용자 그룹 관리",
-	"usergroups-desc": "어떤 사용자 무리가 어떤 사용자 권리를 갖는지에 대한 더 세밀한 통제를 제공함.",
+	"usergroups-desc": "어떤 사용자 권리는 어떤 사용자 그룹에 등록될 수 있는지에 대한 더 나은 통제를 제공합니다.",
 	"usergroupnameexists-error": "이 이름을 가진 그룹이 이미 존재하기 때문에 새로운 사용자 그룹을 생성할 수 없습니다.",
 	"usergroups-createnew": "(새로 추가...)",
 	"usergroups-editgroup-delete": "이 사용자 그룹을 삭제합니다 <span class=\"important\" style=\"color:red\">(<strong>경고</strong>: 이는 되돌릴 수 없습니다. 이 그룹을 재생성하려면 [[Special:UserGroups/new|새로 만들어야 합니다]].)</span>",
