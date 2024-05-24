@@ -217,7 +217,7 @@ class SpecialUserGroups extends SpecialPage {
 						'newgroup',
 						'newgroupname',
 						30,
-						null,
+						'',
 						[ 'autofocus' => true, 'text-align' => 'right' ]
 					)
 				);
