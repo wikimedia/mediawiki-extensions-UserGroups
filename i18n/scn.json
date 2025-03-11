@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ajeje Brazorf"
+			"Ajeje Brazorf",
+			"GianAntonucci"
 		]
 	},
 	"usergroups-editgroup-reason": "Mutivu:",
-	"usergroups-editgroup-save": "Sarva li canciamenti",
+	"usergroups-editgroup-save": "Sarba li canci",
 	"usergroups-log-none": "(nuḍḍu)",
 	"action-modifygroups": "canciari li gruppi utenti"
 }
