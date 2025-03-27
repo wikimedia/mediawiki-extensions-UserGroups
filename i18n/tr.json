@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"BaRaN6161 TURK",
-			"MuratTheTurkish"
+			"MuratTheTurkish",
+			"Joseph"
 		]
 	},
 	"usergroups": "Kullanıcı grupları yönetimi",
@@ -12,7 +13,7 @@
 	"usergroups-editgroup-delete": "Bu kullanıcı grubunu sil <span class=\"important\"style=\"color:red\">(<strong>Uyarı</strong>:Bu geri döndürülemez. Bu sınıfı yeniden oluşturmak için [[Special:UserGroups/new|yenisi yapın]].)</span>",
 	"usergroups-editgroup-desc": "Aşağıdaki açılır menüden bir kullanıcı grubu seçin veya \"yeni oluştur...\" seçeneğiyle kendi grubunuzu oluşturun.",
 	"usergroups-editgroup-newgroup": "Yeni kullanıcı grubunuzun adını girin:",
-	"usergroups-editgroup-reason": "Sebep:",
+	"usergroups-editgroup-reason": "Gerekçe:",
 	"usergroups-editgroup-revoke": "Bu kullanıcı grubunu hibe izinleri yerine iptal edilecek şekilde ayarla",
 	"usergroups-editgroup-save": "Değişiklikleri kaydet",
 	"usergroups-editgroup-userrights": "Mevcut tüm izinler",
