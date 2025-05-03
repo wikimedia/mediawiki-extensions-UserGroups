@@ -1,5 +1,5 @@
-$( function () {
-	$( '#groupname' ).on( 'change', function () {
+$( () => {
+	$( '#groupname' ).on( 'change', () => {
 		location = $( '#groupname option:selected' ).val();
 	} );
 } );
