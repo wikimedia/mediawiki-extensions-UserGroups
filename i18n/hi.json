@@ -1,8 +1,33 @@
 {
 	"@metadata": {
 		"authors": [
-			"Sfic"
+			"Sfic",
+			"Saurmandal"
 		]
 	},
-	"usergroups-editgroup-save": "बदलाव सहेजें"
+	"usergroups": "सदस्य समूह प्रबंधन",
+	"usergroups-desc": "कौन-से सदस्य अधिकार कौन-से समूहों के साथ पंजीकृत किए जा सकते हैं, इस पर बेहतर नियंत्रण प्रदान करता है",
+	"usergroupnameexists-error": "आप इस नाम से एक नया सदस्य समूह नहीं बना सकते क्योंकि यह पहले से ही मौजूद है।",
+	"usergroups-createnew": "(नया बनाएँ...)",
+	"usergroups-editgroup-delete": "यह सदस्य समूह हटाएँ <span class=\"important\" style=\"color:red\">(<strong>चेतावनी</strong>: यह अपरिवर्तनीय है। इस वर्ग को दोबारा बनाने के लिए आपको [[Special:UserGroups/new|एक नया समूह बनाना]] होगा।)</span>",
+	"usergroups-editgroup-desc": "नीचे के ड्रॉपडाउन से एक सदस्य समूह चुनें, या फिर \"नया बनाएँ...\" बटन से अपना एक समूह बनाएँ।",
+	"usergroups-editgroup-newgroup": "अपने नए सदस्य समूह का नाम दर्ज करें:",
+	"usergroups-editgroup-reason": "कारण:",
+	"usergroups-editgroup-revoke": "इस समूह को अनुमतियाँ प्रदान करने के बजाय निरस्त करने के लिए सेट कें",
+	"usergroups-editgroup-save": "बदलाव सहेजें",
+	"usergroups-editgroup-userrights": "सभी उपलब्ध अनुमतियाँ",
+	"usergroups-log-name": "सदस्य समूह लॉग",
+	"usergroups-log-header": "इस लॉग में हर सदस्य समूह के सदस्य अधिकारों पर किए गए बदलाव रिकॉर्ड किए जाते हैं।",
+	"usergroups-log-none": "(कोई नहीं)",
+	"usergroups-log-revoke": "निरस्तीकरण प्रकार",
+	"usergroups-log-revoke-switchon": "निरस्तीकरण प्रकार में बदला गया;",
+	"usergroups-log-revoke-switchoff": "गैर-निरस्तीकरण प्रकार में बदला गया;",
+	"action-modifygroups": "सदस्य समूह संशोधित करें",
+	"invalidusergroupname-title": "सदस्य समूह का नाम अमान्य",
+	"invalidusergroupname-error": "आपके नए सदस्य समूह के लिए आपका दर्ज किया हुआ नाम अमान्य है।\n\n[[Special:UserGroups|वापस जाएँ]]।",
+	"nosuchusergroup": "\"$1\" नामक कोई सदस्य समूह नहीं मिला। क्या आप इस नए सदस्य समूह को [[Special:UserGroups/new|बनाना]] चाह रहे थे?",
+	"right-modifygroups": "सदस्य समूह बनाएँ, संशोधित करें और हटाएँ",
+	"logentry-usergroups-create": "$1 ने नया $7 सदस्य समूह \"$4\" {{GENDER:$2|बनाया}} जिसमें शामिल है: $5",
+	"logentry-usergroups-delete": "$1 ने सदस्य समूह \"$4\" {{GENDER:$2|हटाया}}।",
+	"logentry-usergroups-modify": "$1 ने सदस्य समूह \"$4\" {{GENDER:$2|संशोधित किया}}। $7 $5 जोड़ा गया; $6 हटाया गया"
 }
