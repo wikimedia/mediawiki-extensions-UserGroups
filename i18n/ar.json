@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"ديفيد",
-			"Meno25"
+			"Meno25",
+			"Mohammed Qays"
 		]
 	},
 	"usergroups": "إدارة مجموعات المستخدمين",
@@ -20,8 +21,8 @@
 	"usergroups-log-header": "يسجل هذا السجل صلاحيات المستخدم لكل مجموعة مستخدمين.",
 	"usergroups-log-none": "(لا شيء)",
 	"usergroups-log-revoke": "نوع الإبطال",
-	"usergroups-log-revoke-switchon": "تم التحويل إلى نوع الإبطال،",
-	"usergroups-log-revoke-switchoff": "تم التحويل إلى نوع غير الإبطال",
+	"usergroups-log-revoke-switchon": "حُوِّلَ إلى نوع الإلغاء،",
+	"usergroups-log-revoke-switchoff": "حُوِّلَ إلى نوع غير قابل للإلغاء؛",
 	"action-modifygroups": "تعديل مجموعات المستخدمين",
 	"invalidusergroupname-title": "اسم مجموعة مستخدم غير صالح",
 	"invalidusergroupname-error": "الاسم الذي أدخلته لمجموعة المستخدمين الجديدة غير صالح.\n\n[[Special:UserGroups|العودة]].",
