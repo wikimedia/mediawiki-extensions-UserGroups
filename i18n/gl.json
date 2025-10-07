@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Elisardojm"
+			"Elisardojm",
+			"Toliño"
 		]
 	},
 	"usergroups": "Xestión de grupos de usuarios",
@@ -18,9 +19,9 @@
 	"usergroups-log-name": "Rexistro de grupos de usuarios",
 	"usergroups-log-header": "Este registo amosa as modificacións dos dereitos de usuario de cada grupo de usuarios.",
 	"usergroups-log-none": "(ningún)",
-	"usergroups-log-revoke": "tipo para revogación",
-	"usergroups-log-revoke-switchon": "Intercambiado a tipo revocado;",
-	"usergroups-log-revoke-switchoff": "Intercambiado a tipo sen revocación;",
+	"usergroups-log-revoke": "de tipo revogado",
+	"usergroups-log-revoke-switchon": "Cambiado a tipo revogado;",
+	"usergroups-log-revoke-switchoff": "Cambiado a tipo sen revogación;",
 	"action-modifygroups": "modificar grupos de usuarios",
 	"invalidusergroupname-title": "Nome de grupo de usuarios non válido",
 	"invalidusergroupname-error": "O nome que indicou para o novo grupo de usuarios non é válido.\n\n[[Special:UserGroups|Volver]].",
@@ -28,5 +29,5 @@
 	"right-modifygroups": "Crear, modificar e borrar grupos de usuarios",
 	"logentry-usergroups-create": "$1 {{GENDER:$2|creou}} un novo grupo de usuarios $7 \"$4\" que contén: $5",
 	"logentry-usergroups-delete": "$1 {{GENDER:$2|eliminou}} o grupo de usuarios \"$4\".",
-	"logentry-usergroups-modify": "$1 {{GENDER:$2|modificou}} o grupo de usuarios \"$4\". $7 Engadido $5; eliminado $6"
+	"logentry-usergroups-modify": "$1 {{GENDER:$2|modificou}} o grupo de usuarios \"$4\". $7 engadido: $5; eliminado: $6"
 }
