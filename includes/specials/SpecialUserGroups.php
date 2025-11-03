@@ -26,6 +26,8 @@
  * @license GPL-2.0-or-later
  */
 
+use MediaWiki\Html\Html;
+
 /**
  * Special page allowing others to create, modify, delete and rename
  * user groups.
