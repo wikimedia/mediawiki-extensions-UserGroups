@@ -69,7 +69,7 @@ class SpecialUserGroups extends SpecialPage {
 		$this->setHeaders();
 		$this->outputHeader();
 
-		$this->getOutput()->setPageTitle( $this->msg( 'usergroups' ) );
+		$this->getOutput()->setPageTitle( $this->msg( 'usergroups' )->escaped() );
 		$this->getOutput()->setArticleRelated( false );
 		$this->getOutput()->disableClientCache();
 		$this->getOutput()->addModules( 'ext.UserGroups' );
