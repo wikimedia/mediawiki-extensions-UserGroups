@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Daud I.F. Argana"
+			"Daud I.F. Argana",
+			"Penyuwangi"
 		]
 	},
-	"usergroups": "Manajemen kelompok pengguna",
+	"usergroups": "Pengelolaan kelompok pengguna",
 	"usergroups-desc": "Menyediakan kendali lebih banyak tentang hak pengguna apa yang bisa diberikan kepada kelompok pengguna yang mana",
 	"usergroupnameexists-error": "Anda tidak bisa membuat kelompok pengguna baru dengan nama ini karena sudah ada yang menggunakan nama tersebut.",
 	"usergroups-createnew": "(buat baru...)",
