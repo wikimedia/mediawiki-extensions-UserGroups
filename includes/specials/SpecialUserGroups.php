@@ -208,13 +208,15 @@ class SpecialUserGroups extends SpecialPage {
 					Html::element( 'hr' ) .
 					Html::element( 'br' ) .
 					"\n" .
-					Xml::inputLabel(
+					Html::label(
 						$this->msg( 'usergroups-editgroup-newgroup' ),
+						'newgroupname'
+					) . "\u{00A0}" .
+					Html::input(
 						'newgroup',
-						'newgroupname',
-						30,
 						'',
-						[ 'autofocus' => true, 'text-align' => 'right' ]
+						'text',
+						[ 'id' => 'newgroupname', 'size' => 30, 'autofocus' => true, 'text-align' => 'right' ]
 					)
 				);
 			} else {
