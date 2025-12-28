@@ -135,17 +135,24 @@ class SpecialUserGroups extends SpecialPage {
 	 */
 	protected function buildHeader() {
 		$title = $this->getPageTitle()->getLocalURL();
-		$options = Xml::option( '', '' ) . "\n";
+		$options = Html::element( 'option', [ 'value' => '' ], '' ) . "\n";
 		if ( $this->allGroups ) {
 			foreach ( $this->allGroups as $group ) {
 				$internalname = $group->getName();
 				$groupname = ( $internalname == '*' ) ? 'all' : $internalname;
 				$groupnameLocalized = $group->getLocalizedName();
-				$options .= Xml::option( $groupnameLocalized, $title . '/' . $groupname ) . "\n";
+				$options .= Html::element(
+					'option',
+					[ 'value' => $title . '/' . $groupname ],
+					$groupnameLocalized
+				) . "\n";
 			}
 		}
-		$options .= Xml::option( $this->msg( 'usergroups-createnew' ),
-					$title . '/' . 'new' );
+		$options .= Html::element(
+			'option',
+			[ 'value' => $title . '/' . 'new' ],
+			$this->msg( 'usergroups-createnew' )
+		);
 		$this->getOutput()->addHTML(
 			'
 			' .
@@ -274,13 +281,12 @@ class SpecialUserGroups extends SpecialPage {
 				}
 			}
 			$this->getOutput()->addHTML(
-				Xml::fieldset(
-					$this->msg( 'usergroups-editgroup-userrights' ),
-					"<table><tbody><tr><td><ul>" .
-					$checkboxes .
-					"</ul></td></tr></tbody></table>",
-					[ 'class' => 'usergroups-editpermissions' ]
-				) .
+				Html::openElement( 'fieldset', [ 'class' => 'usergroups-editpermissions' ] ) . "\n" .
+				Html::element( 'legend', [], $this->msg( 'usergroups-editgroup-userrights' ) ) . "\n" .
+				"<table><tbody><tr><td><ul>" .
+				$checkboxes .
+				"</ul></td></tr></tbody></table>\n" .
+				Html::closeElement( 'fieldset' ) . "\n" .
 				Html::hidden( 'wpEditToken', $this->getUser()->getEditToken() ) .
 				Html::hidden( 'wpGroupPage', $subpage ) .
 				Html::check(
