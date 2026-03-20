@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Aca",
 			"Winston Sung"
 		]
 	},
@@ -22,8 +23,8 @@
 	"usergroups-log-revoke-switchon": "Smijenjeno na oduzimanje:",
 	"usergroups-log-revoke-switchoff": "Smijenjeno na neoduzimanje:",
 	"action-modifygroups": "mijenjanje korisničkih grupa",
-	"invalidusergroupname-title": "Nevalidno ime korisničke grupe",
-	"invalidusergroupname-error": "Uneseno ime nove korisničke grupe je nevalidno.\n\n[[Special:UserGroups|Nazad]].",
+	"invalidusergroupname-title": "Nevažeći naziv korisničke grupe",
+	"invalidusergroupname-error": "Uneseni naziv nove korisničke grupe nije ispravan.\n\n[[Special:UserGroups|Nazad]].",
 	"nosuchusergroup": "Nisam pronašao korisničku grupu nazvanu \"$1\". Da li ste želeli [[Special:UserGroups/new|stvoriti]] ovu korisničku grupu?",
 	"right-modifygroups": "Pravljenje, mijenjanje i brisanje korisničkih grupa",
 	"logentry-usergroups-create": "$1 {{GENDER:$2|napravio|napravila}} je novu $7 korisničku grupu „$4“ što sadrži: $5",
