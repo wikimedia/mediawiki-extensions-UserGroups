@@ -47,7 +47,12 @@ class SpecialUserGroups extends SpecialPage {
 	protected $usergroup;
 
 	public function __construct() {
-		parent::__construct( 'UserGroups', 'modifygroups', true );
+		parent::__construct( 'UserGroups' );
+	}
+
+	/** @inheritDoc */
+	public function getRestriction(): string {
+		return 'modifygroups';
 	}
 
 	public function doesWrites() {
