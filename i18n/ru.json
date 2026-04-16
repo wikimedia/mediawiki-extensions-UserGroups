@@ -21,5 +21,8 @@
 	"usergroups-log-none": "(нет)",
 	"action-modifygroups": "изменение групп участников",
 	"invalidusergroupname-title": "Неверное название группы участников",
-	"right-modifygroups": "Создание, изменение и удаление групп участников"
+	"right-modifygroups": "Создание, изменение и удаление групп участников",
+	"logentry-usergroups-create": "$1 {{GENDER:$2|создал|создала}} новую группу участников $7 «$4», содержащую: $5",
+	"logentry-usergroups-delete": "$1 {{GENDER:$2|удалил|удалила}} группу участников «$4».",
+	"logentry-usergroups-modify": "$1 {{GENDER:$2|изменил|изменила}} группу участников «$4», $7 Добавлено: $5; Удалено $6"
 }
