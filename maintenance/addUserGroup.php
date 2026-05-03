@@ -27,8 +27,6 @@
 
 require_once __DIR__ . '/Maintenance.php';
 
-use MediaWiki\MediaWikiServices;
-
 /**
  * Maintenance script to add a user group, either to a list of users or
  * to the database.
@@ -119,7 +117,7 @@ class AddUserGroup extends Maintenance {
 				$this->error( "Error: User group specified does not exist.", true );
 			}
 			$usernames = explode( ',', $this->getOption( 'touser' ) );
-			$userGroupManager = MediaWikiServices::getInstance()->getUserGroupManager();
+			$userGroupManager = $this->getServiceContainer()->getUserGroupManager();
 			foreach ( $usernames as $username ) {
 				if ( $log && $performer ) {
 					$changeableGroups = $performer->changeableGroups();
