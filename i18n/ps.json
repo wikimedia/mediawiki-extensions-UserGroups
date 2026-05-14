@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"شاه زمان پټان"
+		]
+	},
+	"usergroups": "د کارن ډلو چاروالي",
+	"usergroups-desc": "د کارن‌رښتو په اړه ښه کنترول چمتو کوي چې د کومو کارن ډلو سره نوم‌ليکل کېدی شي",
+	"usergroupnameexists-error": "تاسو نشئ کولی په دې نوم نوې کارن ډله جوړه کړئ؛ ځکه دا لا دمخه شتون لري.",
+	"usergroups-createnew": "(نوی جوړول...)",
+	"usergroups-editgroup-reason": "لامل:",
+	"usergroups-editgroup-save": "بدلونونه خوندي‌کول",
+	"usergroups-editgroup-userrights": "ټولې شته اجازې",
+	"usergroups-log-name": "کارن ډلو يادښت",
+	"usergroups-log-none": "(هېڅ)"
+}
