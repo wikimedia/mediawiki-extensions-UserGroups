@@ -4,6 +4,7 @@
 			"Dr1t jg",
 			"Kwj2772",
 			"Suleiman the Magnificent Television",
+			"Tensama0415",
 			"Ykhwong",
 			"아라"
 		]
@@ -25,7 +26,7 @@
 	"usergroups-log-revoke": "권한 제거형",
 	"usergroups-log-revoke-switchon": "권한 제거형으로 전환했습니다;",
 	"usergroups-log-revoke-switchoff": "권한 부여형으로 전환했습니다;",
-	"action-modifygroups": "사용자 그룹을 수정할",
+	"action-modifygroups": "사용자 그룹을 수정",
 	"invalidusergroupname-title": "잘못된 사용자 그룹 이름",
 	"invalidusergroupname-error": "새 사용자 그룹으로 입력한 이름이 잘못되었습니다.\n\n[[Special:UserGroups|돌아갑니다]].",
 	"nosuchusergroup": "\"$1\"이라는 사용자 그룹이 존재하지 않습니다. 이 새 사용자 그룹을 [[Special:UserGroups/new|생성]]하시겠습니까?",
