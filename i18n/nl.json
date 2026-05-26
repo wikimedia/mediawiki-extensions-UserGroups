@@ -28,7 +28,7 @@
 	"usergroups-log-revoke-switchoff": "Overgeschakeld naar rechten verlenende groep;",
 	"action-modifygroups": "gebruikersgroepen wijzigen",
 	"invalidusergroupname-title": "Ongeldige gebruikergroepnaam",
-	"invalidusergroupname-error": "De naam die u hebt ingevoerd voor uw nieuwe gebruikersgroep is ongeldig.\n\n[[Special:UserGroups|Ga terug]].",
+	"invalidusergroupname-error": "De naam die u hebt ingevoerd voor uw nieuwe gebruikersgroep is incorrect.\n\n[[Special:UserGroups|Ga terug]].",
 	"nosuchusergroup": "Er is geen gebruikersgroep gevonden met de naam “$1”. Wilt u deze nieuwe gebruikersgroep misschien [[Special:UserGroups/new|aanmaken]]?",
 	"right-modifygroups": "Gebruikersgroepen aanmaken, wijzigen en verwijderen",
 	"logentry-usergroups-create": "$1 {{GENDER:$2|heeft}} de nieuwe $7 gebruikersgroep “$4” aangemaakt met daarin: $5",
