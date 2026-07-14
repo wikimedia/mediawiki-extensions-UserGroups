@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Robby"
+			"Robby",
+			"Volvox"
 		]
 	},
 	"usergroups": "Gestioun vu Benotzergruppen",
@@ -9,7 +10,12 @@
 	"usergroups-editgroup-reason": "Grond:",
 	"usergroups-editgroup-save": "Ännerunge späicheren",
 	"usergroups-editgroup-userrights": "All disponibel Rechter",
+	"usergroups-log-name": "Benotzergruppe-Logbuch",
 	"usergroups-log-none": "(keen)",
 	"action-modifygroups": "Benotzergruppen änneren",
+	"invalidusergroupname-title": "Ongültege Benotzergruppennumm",
+	"invalidusergroupname-error": "Den Numm, deen Dir fir Är nei Benotzergrupp aginn hutt, ass ongülteg.\n\n[[Special:UserGroups|Zeréck]].",
+	"nosuchusergroup": "Et gouf keng Benotzergrupp mam Numm „$1“ fonnt. Wollt Dir ieren dës nei Benotzergrupp [[Special:UserGroups/new|uleeën]]?",
+	"right-modifygroups": "Benotzergruppen uleeën, änneren a läschen",
 	"logentry-usergroups-delete": "$1 {{GENDER:$2|huet}} d'Benotzergrupp \"$4\" geläscht."
 }
