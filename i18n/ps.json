@@ -8,7 +8,7 @@
 	"usergroups-desc": "د کارن‌رښتو په اړه ښه کنترول چمتو کوي چې د کومو کارن ډلو سره نوم‌ليکل کېدی شي",
 	"usergroupnameexists-error": "تاسو نشئ کولی په دې نوم نوې کارن ډله جوړه کړئ؛ ځکه دا لا دمخه شتون لري.",
 	"usergroups-createnew": "(نوی جوړول...)",
-	"usergroups-editgroup-delete": "دا کارن ډله ړنگه کړئ <span class=\"important\" style=\"color:red\">گواښنه:</span>دا نه راگرځېدونکې ده. د دې ټولگې بياجوړولو لپاره تاسو بايد [[Special:UserGroups/new|يو نوی جوړ کړئ]].)</span>",
+	"usergroups-editgroup-delete": "دا کارن ډله ړنگه کړئ <span class=\"important\" style=\"color:red\">(<strong>گواښنه</strong>:دا نه راگرځېدونکې ده. د دې ټولگې بياجوړولو لپاره تاسو بايد [[Special:UserGroups/new|يو نوی جوړ کړئ]].)</span>",
 	"usergroups-editgroup-desc": "د لاندې غورځلړ څخه د کارن ډله غوره کړئ، يا د \"نوی جوړول...\" خوښنې سره يې له ځانه جوړ کړئ.",
 	"usergroups-editgroup-newgroup": "د خپل نوي کارن‌ډلې نوم دننه کړئ:",
 	"usergroups-editgroup-reason": "لامل:",
