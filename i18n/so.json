@@ -4,6 +4,29 @@
 			"AhmedG612"
 		]
 	},
+	"usergroups": "Maareynta kooxaha isticmaalayaasha",
+	"usergroups-desc": "Waxay bixisaa xakameyn faahfaahsan oo ku saabsan xuquuqaha isticmaalayaasha ee lagu diiwaangelin karo kooxaha isticmaalayaasha kala duwan",
+	"usergroupnameexists-error": "Ma abuuri kartid koox isticmaale oo cusub oo magacan leh, maadaama ay hore u jirto.",
+	"usergroups-createnew": "(abuuri cusub...)",
+	"usergroups-editgroup-delete": "Tirtir kooxdan isticmaalayaasha <span class=\"important\" style=\"color:red\">(<strong>Digniin</strong>: Tani lama soo celin karo. Si aad kooxdan mar kale u abuurto, waa inaad [[Special:UserGroups/new|mid cusub samaysaa]].)</span>",
+	"usergroups-editgroup-desc": "Ka dooro koox isticmaalayaal liiska hoos-u-dhaca ah ee hoose, ama samee koox kuu gaar ah adigoo adeegsanaya ikhtiyaarka \"abuuri cusub...\".",
 	"usergroups-editgroup-newgroup": "Geli magaca kooxdaada cusub ee isticmaale:",
-	"usergroups-editgroup-revoke": "U dhig kooxdan isticmaalaha in laga noqdo halkii laga siin lahaa rukhsadaha"
+	"usergroups-editgroup-reason": "Sababta:",
+	"usergroups-editgroup-revoke": "U dhig kooxdan isticmaalaha in laga noqdo halkii laga siin lahaa rukhsadaha",
+	"usergroups-editgroup-save": "Kaydi isbeddellada",
+	"usergroups-editgroup-userrights": "Dhammaan oggolaanshaha la heli karo",
+	"usergroups-log-name": "Diiwaanka kooxaha isticmaalaha",
+	"usergroups-log-header": "Diiwaankani wuxuu kaydiyaa isbeddellada lagu sameeyo xuquuqaha isticmaalayaasha ee koox kasta oo isticmaalayaal ah.",
+	"usergroups-log-none": "(midna)",
+	"usergroups-log-revoke": "Nooca ka noqoshada",
+	"usergroups-log-revoke-switchon": "Waxaa loo beddelay nooca ka noqoshada;",
+	"usergroups-log-revoke-switchoff": "Waxaa loo beddelay nooca aan ahayn ka noqosho;",
+	"action-modifygroups": "wax ka beddel kooxaha isticmaalaha",
+	"invalidusergroupname-title": "Magaca kooxda isticmaalayaasha ma saxna",
+	"invalidusergroupname-error": "Magaca aad u gelisay kooxda cusub ee isticmaalayaasha ma saxna.\n\n[[Special:UserGroups|Ku noqo]].",
+	"nosuchusergroup": "Lama helin koox isticmaalayaal ah oo la yiraahdo \"$1\". Ma laga yaabaa inaad rabto inaad [[Special:UserGroups/new|abuurto]] kooxdan cusub ee isticmaalayaasha?",
+	"right-modifygroups": "Abuur, wax ka beddel oo tirtir kooxaha isticmaalaha",
+	"logentry-usergroups-create": "$1 {{GENDER:$2|abuuray}} koox cusub oo isticmaalayaal ah oo ah $7, oo lagu magacaabo \"$4\", kana kooban: $5",
+	"logentry-usergroups-delete": "$1 {{GENDER:$2|tirtiray}} kooxda isticmaalaha \"$4\".",
+	"logentry-usergroups-modify": "$1 {{GENDER:$2|wax ka beddelay}} kooxda isticmaalaha \"$4\". $7 Waxaa lagu daray $5; Waxaa laga saaray $6"
 }
