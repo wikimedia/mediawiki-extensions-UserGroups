@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Chrumps",
+			"PanWor",
 			"Rail",
 			"Railfail536"
 		]
@@ -25,7 +26,7 @@
 	"invalidusergroupname-error": "Wprowadzona nazwa nowej grupy użytkowników jest nieprawidłowa.\n\n[[Special:UserGroups|Powrót]].",
 	"nosuchusergroup": "Nie znaleziono grupy użytkowników „$1”. Czy chcesz [[Special:UserGroups/new|utworzyć]] tą nową grupę użytkowników?",
 	"right-modifygroups": "Tworzenie, modyfikowanie i usuwanie grup użytkowników",
-	"logentry-usergroups-create": "$1 {{GENDER:$2|stworzył|stworzyła|stworzył(a)}} nową $7 grupę użytkowników „$4” zawierającą: $5",
-	"logentry-usergroups-delete": "$1 {{GENDER:$2|usunął|usunęła}} grupę użytkowników „$4”.",
-	"logentry-usergroups-modify": "$1 {{GENDER:$2|zmienił|zmieniła|zmienił(a)}} grupę użytkowników „$4”. $7 Dodano $5; Usunięto $6"
+	"logentry-usergroups-create": "$1 {{GENDER:$2|utworzył|utworzyła|utworzył(a)}} nową $7 grupę użytkowników „$4” zawierającą: $5",
+	"logentry-usergroups-delete": "$1 {{GENDER:$2|usunął|usunęła|usunął(-ęła)}} grupę użytkowników „$4”.",
+	"logentry-usergroups-modify": "$1 {{GENDER:$2|zmienił|zmieniła|zmienił(a)}} grupę użytkowników „$4”; $7 dodano „$5”; usunięto „$6”"
 }
